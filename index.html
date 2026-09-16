@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html class="dark scroll-smooth" lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>1Tap for Android — Private Personal Expense Tracker</title>
-  <meta name="description" content="Automatically track your spending on Android. Categorize transactions in one tap without a bank login or cloud account. Your data stays on your phone.">
+  <meta name="description"
+    content="Automatically track your spending on Android. Categorize transactions in one tap without a bank login or cloud account. Your data stays on your phone.">
   <link rel="icon" type="image/svg+xml" href="logo.svg">
   <link rel="apple-touch-icon" href="logo.svg">
 
   <!-- Material Symbols Outlined Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap"
+    rel="stylesheet">
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -77,7 +83,7 @@
     }
 
     .vault-guilloche-bg {
-      background-image: 
+      background-image:
         radial-gradient(circle at 50% 0%, rgba(217, 173, 103, 0.08) 0%, transparent 60%),
         radial-gradient(circle at 10% 40%, rgba(125, 217, 167, 0.04) 0%, transparent 40%),
         radial-gradient(circle at 90% 80%, rgba(217, 173, 103, 0.05) 0%, transparent 50%);
@@ -87,6 +93,7 @@
       position: relative;
       transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     }
+
     .numismatic-card::before,
     .numismatic-card::after {
       content: '';
@@ -97,25 +104,28 @@
       opacity: 0.2;
       transition: opacity 0.25s ease;
     }
+
     .numismatic-card::before {
       top: 3px;
       left: 3px;
       border-top: 1px solid #D9AD67;
       border-left: 1px solid #D9AD67;
     }
+
     .numismatic-card::after {
       bottom: 3px;
       right: 3px;
       border-bottom: 1px solid #D9AD67;
       border-right: 1px solid #D9AD67;
     }
+
     .numismatic-card:hover::before,
     .numismatic-card:hover::after {
       opacity: 0.8;
     }
 
     .vault-phone-frame {
-      box-shadow: 
+      box-shadow:
         0 25px 60px -15px rgba(0, 0, 0, 0.95),
         0 0 35px -5px rgba(217, 173, 103, 0.15),
         inset 0 1px 1px 0 rgba(245, 242, 235, 0.15);
@@ -125,6 +135,7 @@
     .category-chip {
       transition: all 0.2s ease;
     }
+
     .category-chip.active {
       background-color: rgba(217, 173, 103, 0.2);
       border-color: #f7c87f;
@@ -134,45 +145,63 @@
   </style>
 </head>
 
-<body class="bg-surface text-on-surface font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container vault-guilloche-bg min-h-screen">
+<body
+  class="bg-surface text-on-surface font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container vault-guilloche-bg min-h-screen">
 
   <!-- ========================================================================= -->
   <!-- 1. TOP NAVIGATION BAR                                                     -->
   <!-- ========================================================================= -->
-  <header class="fixed top-0 left-0 w-full z-50 border-b border-outline-variant/50 bg-surface-container-low/95 backdrop-blur-md">
+  <header
+    class="fixed top-0 left-0 w-full z-50 border-b border-outline-variant/50 bg-surface-container-low/95 backdrop-blur-md">
     <div class="max-w-6xl mx-auto h-16 px-4 md:px-6 flex items-center justify-between">
       <!-- Brand Cluster -->
-      <a class="flex items-center gap-2.5 font-headline-md text-xl text-primary font-bold tracking-tight active:scale-95 transition-transform" href="#hero">
-        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4llE_V8EQt35u5RE7dGzoDaLVb8lqWxIfjGh1ZwuXBb2cQSQ4AfmZRjDxq8OOvnODce6geJQ1yaJpCJ5xvp-Gz7WIhxr-pgF7PlxVgTZbUgMg5DSPejd6qHF9KDcf72S_4E5SgiWcFYnmRKwx2eXENeWWT0uPqqcRvPnNPdteDcDEqrlz5VelMVLOvFnM1a8YobhCgN1rCMQtV4WkHWsYweEVOjoisCgmJ8jykeEWNx7lkXP6BjdMZlqrZ_3kKo21HQ" alt="1Tap Logo" class="w-8 h-8 rounded-full ring-1 ring-primary/40 object-cover shadow-inner shrink-0">
+      <a class="flex items-center gap-2.5 font-headline-md text-xl text-primary font-bold tracking-tight active:scale-95 transition-transform"
+        href="#hero">
+        <img src="logo.svg" alt="1Tap Logo"
+          class="w-8 h-8 rounded-full ring-1 ring-primary/40 object-cover shadow-inner shrink-0">
         <span>1Tap</span>
       </a>
 
       <!-- Desktop Navigation Links -->
-      <nav class="hidden md:flex items-center gap-6 font-label-md text-xs uppercase tracking-wider text-on-surface-variant">
+      <nav
+        class="hidden md:flex items-center gap-6 font-label-md text-xs uppercase tracking-wider text-on-surface-variant">
         <a class="hover:text-primary transition-colors" href="#how-it-works">How It Works</a>
         <a class="hover:text-primary transition-colors" href="#features">Features</a>
         <a class="hover:text-primary transition-colors" href="#privacy">Privacy</a>
         <a class="hover:text-primary transition-colors" href="#faq">FAQ</a>
       </nav>
 
-      <!-- Trailing Action Button & Mobile Menu Toggle -->
-      <div class="flex items-center gap-3">
-        <a class="inline-flex items-center gap-1.5 px-4 py-2 rounded bg-primary-container text-on-primary-container font-label-md text-xs font-bold hover:brightness-110 active:scale-95 transition-all shadow-[0_0_12px_rgba(217,173,103,0.25)]" href="#download">
+      <!-- Trailing Action Buttons & Mobile Menu Toggle -->
+      <div class="flex items-center gap-2.5">
+        <button onclick="openContactModal(event)"
+          class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded border border-outline-variant/60 bg-surface-container-low hover:bg-surface-container hover:border-primary/50 text-on-surface font-label-md text-xs font-semibold transition-all active:scale-95 cursor-pointer shadow-sm">
+          <span class="material-symbols-outlined text-[16px] text-primary">mail</span>
+          <span>Contact Us</span>
+        </button>
+        <a class="inline-flex items-center gap-1.5 px-4 py-2 rounded bg-primary-container text-on-primary-container font-label-md text-xs font-bold hover:brightness-110 active:scale-95 transition-all shadow-[0_0_12px_rgba(217,173,103,0.25)]"
+          href="#download">
           <span class="material-symbols-outlined text-[16px]">download</span>
           <span>Get 1Tap</span>
         </a>
-        <button id="mobile-menu-btn" aria-label="Toggle Navigation Menu" class="md:hidden p-1.5 text-on-surface-variant hover:text-primary focus:outline-none">
+        <button id="mobile-menu-btn" aria-label="Toggle Navigation Menu"
+          class="md:hidden p-1.5 text-on-surface-variant hover:text-primary focus:outline-none">
           <span class="material-symbols-outlined text-[24px]">menu</span>
         </button>
       </div>
     </div>
 
     <!-- Mobile Navigation Drawer -->
-    <div id="mobile-menu" class="hidden md:hidden border-t border-outline-variant/40 bg-surface-container-low px-4 py-3 space-y-2 font-label-md text-xs uppercase tracking-wider">
+    <div id="mobile-menu"
+      class="hidden md:hidden border-t border-outline-variant/40 bg-surface-container-low px-4 py-3 space-y-2 font-label-md text-xs uppercase tracking-wider">
       <a class="block py-2 text-on-surface-variant hover:text-primary" href="#how-it-works">How It Works</a>
       <a class="block py-2 text-on-surface-variant hover:text-primary" href="#features">Features</a>
       <a class="block py-2 text-on-surface-variant hover:text-primary" href="#privacy">Privacy</a>
       <a class="block py-2 text-on-surface-variant hover:text-primary" href="#faq">FAQ</a>
+      <button onclick="openContactModal(event)"
+        class="w-full mt-2 flex items-center justify-center gap-2 px-4 py-2.5 rounded border border-outline-variant/60 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-xs font-semibold transition-all cursor-pointer">
+        <span class="material-symbols-outlined text-[16px] text-primary">mail</span>
+        <span>Contact Us</span>
+      </button>
     </div>
   </header>
 
@@ -183,141 +212,205 @@
   <section class="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden" id="hero">
     <div class="max-w-6xl mx-auto px-4 md:px-6">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-        
+
         <!-- Left Column: Content & CTAs -->
         <div class="lg:col-span-7 flex flex-col items-start">
-          
+
           <!-- Eyebrow Badge Cluster -->
           <div class="flex flex-wrap items-center gap-2 mb-4">
-            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-secondary/40 bg-secondary-container/20 text-secondary font-label-sm text-[11px] tracking-widest uppercase font-semibold">
+            <span
+              class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-secondary/40 bg-secondary-container/20 text-secondary font-label-sm text-[11px] tracking-widest uppercase font-semibold">
               <span class="material-symbols-outlined text-[14px]">smartphone</span>
               <span>Private expense tracking for Android</span>
             </span>
-            <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full border border-primary/40 bg-primary-container/15 text-primary font-label-sm text-[10px] tracking-wider uppercase font-bold">
+            <span
+              class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full border border-primary/40 bg-primary-container/15 text-primary font-label-sm text-[10px] tracking-wider uppercase font-bold">
               ★ Early Access
             </span>
           </div>
 
           <!-- Main Headline -->
-          <h1 class="font-headline-xl text-3xl sm:text-4xl md:text-5xl text-primary font-normal tracking-tight mb-4 text-balance leading-tight">
+          <h1
+            class="font-headline-xl text-3xl sm:text-4xl md:text-5xl text-primary font-normal tracking-tight mb-4 text-balance leading-tight">
             Track every spend. Categorize it in one tap.
           </h1>
 
           <!-- Supporting Copy -->
           <p class="font-body-md text-base sm:text-lg text-on-surface-variant max-w-2xl mb-6 leading-relaxed">
-            1Tap automatically detects your bank transaction messages and turns them into a simple expense tracker — without a bank login or cloud account.
+            1Tap automatically detects your bank transaction messages and turns them into a simple expense tracker —
+            without a bank login or cloud account.
           </p>
 
           <!-- Primary & Secondary CTA Block -->
           <div class="w-full sm:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mb-5">
-            <a class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded bg-primary-container text-on-primary-container font-label-md text-sm font-bold shadow-[0_0_20px_rgba(217,173,103,0.35)] hover:shadow-[0_0_28px_rgba(217,173,103,0.5)] active:scale-95 transition-all" href="#download">
+            <a class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded bg-primary-container text-on-primary-container font-label-md text-sm font-bold shadow-[0_0_20px_rgba(217,173,103,0.35)] hover:shadow-[0_0_28px_rgba(217,173,103,0.5)] active:scale-95 transition-all"
+              href="#download">
               <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"></path>
+                <path
+                  d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z">
+                </path>
               </svg>
               <span>Get 1Tap for Android</span>
             </a>
-            <a class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded border border-outline-variant bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-sm active:scale-95 transition-all" href="#how-it-works">
+            <a class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded border border-outline-variant bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-sm active:scale-95 transition-all"
+              href="#how-it-works">
               <span class="material-symbols-outlined text-primary text-[18px]">arrow_downward</span>
               <span>See how it works</span>
             </a>
           </div>
 
           <!-- Privacy Trust Row -->
-          <div class="flex items-center gap-2 font-label-sm text-xs text-outline tracking-wide border-t border-outline-variant/30 pt-3">
+          <div
+            class="flex items-center gap-2 font-label-sm text-xs text-outline tracking-wide border-t border-outline-variant/30 pt-3">
             <span class="material-symbols-outlined text-secondary text-[16px]">verified_user</span>
             <span>No bank login · Works offline · Data stays on your phone</span>
           </div>
         </div>
 
-        <!-- Right Column: Visual Product Showcase -->
+        <!-- Right Column: Visual Mockup Showcase (5 Cols) -->
         <div class="lg:col-span-5 relative flex justify-center items-center">
-          <div class="relative w-[290px] sm:w-[310px] rounded-[36px] p-2.5 bg-gradient-to-b from-surface-variant via-surface-container-lowest to-surface-variant/40 border border-outline-variant/60 vault-phone-frame">
+          <!-- Medallion Background Glow Ring -->
+          <div class="absolute -top-10 -right-10 w-96 h-96 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+          <div class="absolute -bottom-10 -left-10 w-80 h-80 rounded-full bg-secondary/10 blur-3xl pointer-events-none"></div>
+
+          <!-- Honest Status Chip: On-Device -->
+          <div class="absolute -top-4 left-4 z-20 px-3.5 py-2 rounded-lg border border-outline-variant/80 bg-surface-container-low/95 backdrop-blur-md shadow-2xl flex items-center gap-2">
+            <span class="material-symbols-outlined text-secondary text-[16px]">smartphone</span>
+            <span class="font-label-sm text-xs text-secondary tracking-wide font-medium">PROCESSED ON YOUR PHONE</span>
+          </div>
+
+          <!-- Honest Status Chip: No Credentials -->
+          <div class="absolute -bottom-4 right-4 z-20 px-3.5 py-2 rounded-lg border border-outline-variant/80 bg-surface-container-low/95 backdrop-blur-md shadow-2xl flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary text-[16px]">lock</span>
+            <span class="font-label-sm text-xs text-primary tracking-wide font-medium">NO BANK LOGIN REQUIRED</span>
+          </div>
+
+          <!-- Android Handset Container -->
+          <div class="relative w-[300px] sm:w-[320px] rounded-[36px] p-2.5 bg-gradient-to-b from-surface-variant/80 via-surface-container-lowest to-surface-variant/40 border border-outline-variant/60 vault-phone-frame">
             <!-- Screen Inset -->
             <div class="relative rounded-[28px] overflow-hidden bg-surface-container-lowest ring-1 ring-white/10 select-none">
-              
-              <!-- Status Bar -->
-              <div class="px-5 pt-3 pb-1.5 flex items-center justify-between text-[10px] font-mono text-outline/80 bg-surface-container-lowest">
-                <span class="font-semibold text-on-surface">9:41</span>
-                <div class="w-14 h-3 bg-surface-container-high rounded-full mx-auto"></div>
-                <div class="flex items-center gap-1 text-[10px]">
+
+              <!-- Status Bar & Camera Island -->
+              <div class="px-5 pt-3 pb-2 flex items-center justify-between text-[11px] font-mono text-outline/80 bg-surface-container-lowest">
+                <span class="font-semibold text-on-surface text-[10px]">9:41</span>
+                <div class="w-16 h-3.5 bg-surface-container-high rounded-full mx-auto"></div>
+                <div class="flex items-center gap-1.5 text-[10px]">
                   <span class="material-symbols-outlined text-[12px]">wifi</span>
                   <span class="material-symbols-outlined text-[12px]">battery_full</span>
                 </div>
               </div>
 
               <!-- Top App Bar -->
-              <div class="px-3.5 py-2 flex items-center justify-between border-b border-outline-variant/30 bg-surface-container-lowest">
+              <div class="px-4 py-2 flex items-center justify-between border-b border-outline-variant/30 bg-surface-container-lowest">
                 <div class="flex items-center gap-2">
-                  <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4llE_V8EQt35u5RE7dGzoDaLVb8lqWxIfjGh1ZwuXBb2cQSQ4AfmZRjDxq8OOvnODce6geJQ1yaJpCJ5xvp-Gz7WIhxr-pgF7PlxVgTZbUgMg5DSPejd6qHF9KDcf72S_4E5SgiWcFYnmRKwx2eXENeWWT0uPqqcRvPnNPdteDcDEqrlz5VelMVLOvFnM1a8YobhCgN1rCMQtV4WkHWsYweEVOjoisCgmJ8jykeEWNx7lkXP6BjdMZlqrZ_3kKo21HQ" alt="1Tap Logo" class="w-5 h-5 rounded-full object-cover shrink-0">
+                  <img src="logo.svg" alt="1Tap Logo" class="w-6 h-6 rounded-full object-cover shrink-0">
                   <div>
                     <div class="text-xs font-semibold text-on-surface leading-tight">1Tap</div>
-                    <div class="text-[8px] font-mono uppercase tracking-widest text-primary">OFFLINE VAULT</div>
+                    <div class="text-[9px] font-mono uppercase tracking-widest text-primary">OFFLINE VAULT</div>
                   </div>
                 </div>
-                <div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary/10 border border-primary/40 text-primary text-[9px] font-mono font-medium">
-                  <span class="material-symbols-outlined text-[10px]">lock</span>
-                  <span>100% On-Device</span>
+                <div class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary/10 border border-primary/40 text-primary text-[9px] font-mono font-medium shadow-sm">
+                  <span class="material-symbols-outlined text-[11px]">lock</span>
+                  <span>100% Offline</span>
                 </div>
               </div>
 
               <!-- Phone Screen Body -->
-              <div class="p-3 space-y-2.5 bg-surface text-left text-xs">
-                <!-- Live Detection Alert Box -->
-                <div class="p-2.5 rounded-xl border border-secondary/40 bg-secondary-container/15 flex items-start gap-2 shadow-sm">
-                  <span class="material-symbols-outlined text-secondary text-[16px] shrink-0 mt-0.5">notifications_active</span>
-                  <div>
-                    <div class="font-mono text-[9px] uppercase tracking-wider text-secondary font-bold">Transaction Detected</div>
-                    <div class="text-[11px] font-medium text-on-surface">Spent ₹180 at Indian Oil</div>
-                    <div class="text-[9px] text-outline">Just now · Debit Card</div>
-                  </div>
-                </div>
-
+              <div class="p-3.5 space-y-3 bg-surface text-left relative">
                 <!-- Today's Spending Card -->
-                <div class="p-2.5 rounded-xl border border-outline-variant/50 bg-surface-container-low shadow-sm">
-                  <div class="text-[9px] font-mono uppercase tracking-wider text-outline mb-0.5">Today's Total</div>
+                <div class="p-3 rounded-xl border border-outline-variant/50 bg-surface-container-low shadow-sm">
+                  <div class="text-[10px] font-mono uppercase tracking-wider text-outline mb-0.5">Today's spending</div>
                   <div class="flex items-baseline justify-between">
-                    <div class="font-headline-md text-2xl font-bold text-primary">₹506</div>
-                    <span class="text-[9px] font-mono text-secondary font-medium">4 items categorized</span>
+                    <div class="font-headline-md text-[26px] font-bold text-primary tracking-tight">₹506</div>
+                    <span class="text-[10px] font-mono text-secondary">4 items logged</span>
                   </div>
                 </div>
 
-                <!-- Recent Transactions List -->
-                <div class="space-y-1.5 pt-1">
-                  <div class="text-[9px] font-mono uppercase tracking-wider text-outline px-1">Recent Activity</div>
-
-                  <div class="p-2 rounded-lg bg-surface-container-lowest border border-outline-variant/30 flex items-center justify-between">
-                    <div class="flex items-center gap-2">
-                      <div class="w-5 h-5 rounded-full bg-surface-container text-primary flex items-center justify-center">
-                        <span class="material-symbols-outlined text-[12px]">local_gas_station</span>
-                      </div>
-                      <div>
-                        <div class="text-[10px] font-semibold text-on-surface">Indian Oil</div>
-                        <div class="text-[8px] text-outline">Travel · Card</div>
-                      </div>
-                    </div>
-                    <span class="font-mono font-semibold text-on-surface text-[10px]">-₹180</span>
+                <!-- Recent Transactions Section -->
+                <div class="space-y-1.5 pb-2">
+                  <div class="flex items-center justify-between text-[10px] font-mono uppercase tracking-wider text-outline px-1">
+                    <span>Recent</span>
+                    <span class="text-primary cursor-pointer hover:underline">See all</span>
                   </div>
 
+                  <!-- Item 1: Indian Oil -->
                   <div class="p-2 rounded-lg bg-surface-container-lowest border border-outline-variant/30 flex items-center justify-between">
                     <div class="flex items-center gap-2">
-                      <div class="w-5 h-5 rounded-full bg-surface-container text-primary flex items-center justify-center">
-                        <span class="material-symbols-outlined text-[12px]">shopping_basket</span>
+                      <div class="w-6 h-6 rounded-full bg-surface-container text-primary flex items-center justify-center text-[12px]">
+                        <span class="material-symbols-outlined text-[13px]">local_gas_station</span>
                       </div>
                       <div>
-                        <div class="text-[10px] font-semibold text-on-surface">Sharma Kirana</div>
-                        <div class="text-[8px] text-outline font-sans">Food · UPI</div>
+                        <div class="text-[11px] font-semibold text-on-surface leading-tight">Indian Oil</div>
+                        <div class="text-[9px] text-outline">Bike Fuel • Card</div>
                       </div>
                     </div>
-                    <span class="font-mono font-semibold text-on-surface text-[10px]">-₹140</span>
+                    <div class="font-mono font-semibold text-on-surface text-[11px]">-₹180</div>
+                  </div>
+
+                  <!-- Item 2: Sharma Kirana -->
+                  <div class="p-2 rounded-lg bg-surface-container-lowest border border-outline-variant/30 flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                      <div class="w-6 h-6 rounded-full bg-surface-container text-primary flex items-center justify-center text-[12px]">
+                        <span class="material-symbols-outlined text-[13px]">shopping_basket</span>
+                      </div>
+                      <div>
+                        <div class="text-[11px] font-semibold text-on-surface leading-tight">Sharma Kirana &amp; General Store</div>
+                        <div class="text-[9px] text-outline">Daily grocery • UPI</div>
+                      </div>
+                    </div>
+                    <div class="font-mono font-semibold text-on-surface text-[11px]">-₹140</div>
+                  </div>
+
+                  <!-- Item 3: Vegetable Market -->
+                  <div class="p-2 rounded-lg bg-surface-container-lowest border border-outline-variant/30 flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                      <div class="w-6 h-6 rounded-full bg-surface-container text-primary flex items-center justify-center text-[12px]">
+                        <span class="material-symbols-outlined text-[13px]">store</span>
+                      </div>
+                      <div>
+                        <div class="text-[11px] font-semibold text-on-surface leading-tight">Vegetable Market (Sabzi Mandi)</div>
+                        <div class="text-[9px] text-outline">Cash entry</div>
+                      </div>
+                    </div>
+                    <div class="font-mono font-semibold text-on-surface text-[11px]">-₹85</div>
+                  </div>
+
+                  <!-- Item 4: Mother Dairy -->
+                  <div class="p-2 rounded-lg bg-surface-container-lowest border border-outline-variant/30 flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                      <div class="w-6 h-6 rounded-full bg-surface-container text-primary flex items-center justify-center text-[12px]">
+                        <span class="material-symbols-outlined text-[13px]">local_convenience_store</span>
+                      </div>
+                      <div>
+                        <div class="text-[11px] font-semibold text-on-surface leading-tight">Mother Dairy Milk &amp; Dahi</div>
+                        <div class="text-[9px] text-outline">Dairy • UPI</div>
+                      </div>
+                    </div>
+                    <div class="font-mono font-semibold text-on-surface text-[11px]">-₹66</div>
                   </div>
                 </div>
               </div>
 
-              <!-- Bottom Nav Dock -->
-              <div class="bg-surface-container-lowest border-t border-outline-variant/30 py-2 px-6 flex justify-around text-outline text-[9px] font-mono">
-                <span class="text-primary font-bold">Home</span>
-                <span>Ledger</span>
-                <span>Settings</span>
+              <!-- Bottom Dock Bar with Floating Gold + FAB on Right -->
+              <div class="relative bg-surface-container-lowest border-t border-outline-variant/40 pt-2 pb-3 px-6 select-none">
+                <!-- Gold FAB placed floating on the right above the bottom nav -->
+                <div class="absolute -top-5 right-4 w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-[0_0_16px_rgba(217,173,103,0.55)] border border-primary font-bold text-lg leading-none cursor-pointer hover:scale-105 transition-transform">
+                  +
+                </div>
+                <div class="flex items-center justify-between text-outline text-[10px] max-w-[200px]">
+                  <div class="flex flex-col items-center gap-0.5 text-primary">
+                    <span class="material-symbols-outlined text-[16px]">home</span>
+                    <span class="font-mono text-[9px] font-semibold">Home</span>
+                  </div>
+                  <div class="flex flex-col items-center gap-0.5 text-outline hover:text-on-surface cursor-pointer">
+                    <span class="material-symbols-outlined text-[16px]">receipt_long</span>
+                    <span class="font-mono text-[9px]">Transactions</span>
+                  </div>
+                  <div class="flex flex-col items-center gap-0.5 text-outline hover:text-on-surface cursor-pointer">
+                    <span class="material-symbols-outlined text-[16px]">settings</span>
+                    <span class="font-mono text-[9px]">Settings</span>
+                  </div>
+                </div>
               </div>
 
             </div>
@@ -334,19 +427,21 @@
   <!-- ========================================================================= -->
   <section class="py-16 md:py-20 border-t border-outline-variant/40 bg-surface-container-lowest/40" id="how-it-works">
     <div class="max-w-6xl mx-auto px-4 md:px-6">
-      
+
       <div class="text-center max-w-2xl mx-auto mb-12">
-        <div class="font-label-sm text-xs uppercase tracking-widest text-primary font-bold mb-2">Automated &amp; Instant</div>
+        <div class="font-label-sm text-xs uppercase tracking-widest text-primary font-bold mb-2">Automated &amp; Instant
+        </div>
         <h2 class="font-headline-xl text-2xl sm:text-3xl md:text-4xl text-on-surface">
           Expense tracking without the manual work
         </h2>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        
+
         <!-- Step 1 -->
         <div class="numismatic-card p-6 rounded-xl border border-outline-variant/60 bg-surface-container-low/70">
-          <div class="w-9 h-9 rounded-full bg-primary-container/20 border border-primary text-primary flex items-center justify-center font-label-md font-bold text-sm mb-4">
+          <div
+            class="w-9 h-9 rounded-full bg-primary-container/20 border border-primary text-primary flex items-center justify-center font-label-md font-bold text-sm mb-4">
             1
           </div>
           <h3 class="font-headline-md text-xl text-on-surface mb-2 font-semibold">You make a payment</h3>
@@ -357,7 +452,8 @@
 
         <!-- Step 2 -->
         <div class="numismatic-card p-6 rounded-xl border border-outline-variant/60 bg-surface-container-low/70">
-          <div class="w-9 h-9 rounded-full bg-secondary-container/30 border border-secondary text-secondary flex items-center justify-center font-label-md font-bold text-sm mb-4">
+          <div
+            class="w-9 h-9 rounded-full bg-secondary-container/30 border border-secondary text-secondary flex items-center justify-center font-label-md font-bold text-sm mb-4">
             2
           </div>
           <h3 class="font-headline-md text-xl text-on-surface mb-2 font-semibold">1Tap detects the transaction</h3>
@@ -368,7 +464,8 @@
 
         <!-- Step 3 -->
         <div class="numismatic-card p-6 rounded-xl border border-outline-variant/60 bg-surface-container-low/70">
-          <div class="w-9 h-9 rounded-full bg-primary-container/20 border border-primary text-primary flex items-center justify-center font-label-md font-bold text-sm mb-4">
+          <div
+            class="w-9 h-9 rounded-full bg-primary-container/20 border border-primary text-primary flex items-center justify-center font-label-md font-bold text-sm mb-4">
             3
           </div>
           <h3 class="font-headline-md text-xl text-on-surface mb-2 font-semibold">Tap a category</h3>
@@ -387,16 +484,17 @@
   <!-- ========================================================================= -->
   <section class="py-16 md:py-24 border-t border-outline-variant/40 bg-surface-container-low/30" id="differentiator">
     <div class="max-w-6xl mx-auto px-4 md:px-6">
-      
+
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-        
+
         <div class="lg:col-span-6 space-y-4">
           <div class="font-label-sm text-xs uppercase tracking-widest text-primary font-bold">Signature Experience</div>
           <h2 class="font-headline-xl text-3xl sm:text-4xl text-on-surface leading-tight">
             A payment happens. One tap. Done.
           </h2>
           <p class="font-body-md text-base text-on-surface-variant leading-relaxed">
-            Instead of manually entering every expense, 1Tap detects the transaction and lets you categorize it immediately.
+            Instead of manually entering every expense, 1Tap detects the transaction and lets you categorize it
+            immediately.
           </p>
 
           <!-- Category Chip Switcher Demo Instruction -->
@@ -406,31 +504,38 @@
 
           <!-- Interactive Category Chips -->
           <div class="flex flex-wrap gap-2 pt-1" id="category-chips">
-            <button data-cat="Food" data-icon="restaurant" class="category-chip active px-3.5 py-1.5 rounded-full border border-outline-variant bg-surface-container text-xs font-semibold flex items-center gap-1.5">
+            <button data-cat="Food" data-icon="restaurant"
+              class="category-chip active px-3.5 py-1.5 rounded-full border border-outline-variant bg-surface-container text-xs font-semibold flex items-center gap-1.5">
               <span class="material-symbols-outlined text-[16px]">restaurant</span>
               <span>Food</span>
             </button>
-            <button data-cat="Travel" data-icon="directions_car" class="category-chip px-3.5 py-1.5 rounded-full border border-outline-variant bg-surface-container text-xs font-semibold flex items-center gap-1.5 text-on-surface-variant hover:text-primary">
+            <button data-cat="Travel" data-icon="directions_car"
+              class="category-chip px-3.5 py-1.5 rounded-full border border-outline-variant bg-surface-container text-xs font-semibold flex items-center gap-1.5 text-on-surface-variant hover:text-primary">
               <span class="material-symbols-outlined text-[16px]">directions_car</span>
               <span>Travel</span>
             </button>
-            <button data-cat="Shopping" data-icon="shopping_bag" class="category-chip px-3.5 py-1.5 rounded-full border border-outline-variant bg-surface-container text-xs font-semibold flex items-center gap-1.5 text-on-surface-variant hover:text-primary">
+            <button data-cat="Shopping" data-icon="shopping_bag"
+              class="category-chip px-3.5 py-1.5 rounded-full border border-outline-variant bg-surface-container text-xs font-semibold flex items-center gap-1.5 text-on-surface-variant hover:text-primary">
               <span class="material-symbols-outlined text-[16px]">shopping_bag</span>
               <span>Shopping</span>
             </button>
-            <button data-cat="Bills" data-icon="receipt" class="category-chip px-3.5 py-1.5 rounded-full border border-outline-variant bg-surface-container text-xs font-semibold flex items-center gap-1.5 text-on-surface-variant hover:text-primary">
+            <button data-cat="Bills" data-icon="receipt"
+              class="category-chip px-3.5 py-1.5 rounded-full border border-outline-variant bg-surface-container text-xs font-semibold flex items-center gap-1.5 text-on-surface-variant hover:text-primary">
               <span class="material-symbols-outlined text-[16px]">receipt</span>
               <span>Bills</span>
             </button>
-            <button data-cat="Health" data-icon="medical_services" class="category-chip px-3.5 py-1.5 rounded-full border border-outline-variant bg-surface-container text-xs font-semibold flex items-center gap-1.5 text-on-surface-variant hover:text-primary">
+            <button data-cat="Health" data-icon="medical_services"
+              class="category-chip px-3.5 py-1.5 rounded-full border border-outline-variant bg-surface-container text-xs font-semibold flex items-center gap-1.5 text-on-surface-variant hover:text-primary">
               <span class="material-symbols-outlined text-[16px]">medical_services</span>
               <span>Health</span>
             </button>
-            <button data-cat="Entertainment" data-icon="movie" class="category-chip px-3.5 py-1.5 rounded-full border border-outline-variant bg-surface-container text-xs font-semibold flex items-center gap-1.5 text-on-surface-variant hover:text-primary">
+            <button data-cat="Entertainment" data-icon="movie"
+              class="category-chip px-3.5 py-1.5 rounded-full border border-outline-variant bg-surface-container text-xs font-semibold flex items-center gap-1.5 text-on-surface-variant hover:text-primary">
               <span class="material-symbols-outlined text-[16px]">movie</span>
               <span>Entertainment</span>
             </button>
-            <button data-cat="Other" data-icon="more_horiz" class="category-chip px-3.5 py-1.5 rounded-full border border-outline-variant bg-surface-container text-xs font-semibold flex items-center gap-1.5 text-on-surface-variant hover:text-primary">
+            <button data-cat="Other" data-icon="more_horiz"
+              class="category-chip px-3.5 py-1.5 rounded-full border border-outline-variant bg-surface-container text-xs font-semibold flex items-center gap-1.5 text-on-surface-variant hover:text-primary">
               <span class="material-symbols-outlined text-[16px]">more_horiz</span>
               <span>Other</span>
             </button>
@@ -439,7 +544,8 @@
 
         <!-- Live Interactive Card Preview -->
         <div class="lg:col-span-6 flex justify-center">
-          <div class="w-full max-w-sm rounded-2xl border border-primary/40 bg-surface-container-low p-5 shadow-2xl backdrop-blur-md relative overflow-hidden">
+          <div
+            class="w-full max-w-sm rounded-2xl border border-primary/40 bg-surface-container-low p-5 shadow-2xl backdrop-blur-md relative overflow-hidden">
             <div class="flex items-center justify-between text-xs text-outline mb-3 font-mono">
               <span>JUST DETECTED</span>
               <span class="text-secondary font-semibold">1-TAP READY</span>
@@ -455,14 +561,15 @@
             </div>
 
             <!-- Active Selected Category Banner -->
-            <div class="p-3 rounded-lg border border-primary/30 bg-primary-container/15 flex items-center justify-between">
+            <div
+              class="p-3 rounded-lg border border-primary/30 bg-primary-container/15 flex items-center justify-between">
               <div class="flex items-center gap-2">
                 <span class="material-symbols-outlined text-primary text-[20px]" id="demo-cat-icon">restaurant</span>
                 <span class="text-xs font-label-sm uppercase tracking-wider text-outline">Selected Category:</span>
               </div>
               <span class="font-bold text-primary text-sm font-mono" id="demo-cat-name">Food</span>
             </div>
-            
+
             <div class="mt-4 text-center">
               <span class="text-[11px] text-secondary font-mono">✓ Instant 1-Tap Logged to Local Device Storage</span>
             </div>
@@ -480,22 +587,25 @@
   <!-- ========================================================================= -->
   <section class="py-16 md:py-24 border-t border-outline-variant/40" id="privacy">
     <div class="max-w-6xl mx-auto px-4 md:px-6">
-      
+
       <div class="text-center max-w-2xl mx-auto mb-12">
-        <div class="font-label-sm text-xs uppercase tracking-widest text-secondary font-bold mb-2">On-Device Security</div>
+        <div class="font-label-sm text-xs uppercase tracking-widest text-secondary font-bold mb-2">On-Device Security
+        </div>
         <h2 class="font-headline-xl text-2xl sm:text-3xl md:text-4xl text-on-surface">
           Your financial data stays with you.
         </h2>
         <p class="font-body-md text-base text-on-surface-variant mt-3 leading-relaxed">
-          1Tap is designed around on-device expense tracking. You don't need to connect your bank account or create a cloud account to track your spending.
+          1Tap is designed around on-device expense tracking. You don't need to connect your bank account or create a
+          cloud account to track your spending.
         </p>
       </div>
 
       <!-- 4 Clean Factual Cards -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        
+
         <div class="p-5 rounded-xl border border-outline-variant/60 bg-surface-container-low/70">
-          <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-primary mb-4">
+          <div
+            class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-primary mb-4">
             <span class="material-symbols-outlined text-[24px]">key_off</span>
           </div>
           <h3 class="font-headline-md text-lg text-on-surface mb-1 font-semibold">No bank login</h3>
@@ -505,7 +615,8 @@
         </div>
 
         <div class="p-5 rounded-xl border border-outline-variant/60 bg-surface-container-low/70">
-          <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-secondary mb-4">
+          <div
+            class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-secondary mb-4">
             <span class="material-symbols-outlined text-[24px]">memory</span>
           </div>
           <h3 class="font-headline-md text-lg text-on-surface mb-1 font-semibold">On-device processing</h3>
@@ -515,7 +626,8 @@
         </div>
 
         <div class="p-5 rounded-xl border border-outline-variant/60 bg-surface-container-low/70">
-          <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-primary mb-4">
+          <div
+            class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-primary mb-4">
             <span class="material-symbols-outlined text-[24px]">wifi_off</span>
           </div>
           <h3 class="font-headline-md text-lg text-on-surface mb-1 font-semibold">Works offline</h3>
@@ -525,7 +637,8 @@
         </div>
 
         <div class="p-5 rounded-xl border border-outline-variant/60 bg-surface-container-low/70">
-          <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-secondary mb-4">
+          <div
+            class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-secondary mb-4">
             <span class="material-symbols-outlined text-[24px]">smartphone</span>
           </div>
           <h3 class="font-headline-md text-lg text-on-surface mb-1 font-semibold">Your data, your device</h3>
@@ -545,13 +658,15 @@
   <!-- ========================================================================= -->
   <section class="py-14 border-t border-outline-variant/40 bg-surface-container-lowest/50" id="sms-explanation">
     <div class="max-w-4xl mx-auto px-4 md:px-6">
-      
+
       <div class="rounded-xl border border-outline-variant/60 bg-surface-container-low p-6 md:p-8">
         <h3 class="font-headline-md text-xl md:text-2xl text-primary mb-3 font-semibold">
           Why does 1Tap need transaction-message access?
         </h3>
         <p class="font-body-sm text-sm text-on-surface-variant mb-5 leading-relaxed">
-          Banks send transaction alerts after purchases, UPI payments, ATM withdrawals and other account activity. 1Tap uses supported financial transaction messages to identify expenses automatically so you don't have to enter them manually.
+          Banks send transaction alerts after purchases, UPI payments, ATM withdrawals and other account activity. 1Tap
+          uses supported financial transaction messages to identify expenses automatically so you don't have to enter
+          them manually.
         </p>
 
         <!-- Visual Callouts -->
@@ -564,7 +679,8 @@
             </div>
           </div>
 
-          <div class="p-3.5 rounded-lg border border-outline-variant/40 bg-surface-container-lowest flex items-start gap-3">
+          <div
+            class="p-3.5 rounded-lg border border-outline-variant/40 bg-surface-container-lowest flex items-start gap-3">
             <span class="material-symbols-outlined text-outline text-[20px] shrink-0 mt-0.5">cancel</span>
             <div>
               <div class="font-label-sm text-xs uppercase tracking-wider text-outline font-bold">Not for</div>
@@ -583,23 +699,28 @@
   <!-- ========================================================================= -->
   <section class="py-16 md:py-20 border-t border-outline-variant/40" id="india-payments">
     <div class="max-w-6xl mx-auto px-4 md:px-6 text-center">
-      
-      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-primary/40 bg-primary-container/15 text-primary font-label-sm text-xs uppercase font-bold mb-3">
+
+      <div
+        class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-primary/40 bg-primary-container/15 text-primary font-label-sm text-xs uppercase font-bold mb-3">
         <span>🇮🇳 Built for Indian Banking</span>
       </div>
-      
+
       <h2 class="font-headline-xl text-2xl sm:text-3xl md:text-4xl text-on-surface mb-3">
         Built around how India pays
       </h2>
       <p class="font-body-md text-base text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
-        Whether it's UPI, cards or other supported bank transactions, 1Tap helps turn everyday payment alerts into an organized spending history.
+        Whether it's UPI, cards or other supported bank transactions, 1Tap helps turn everyday payment alerts into an
+        organized spending history.
       </p>
 
       <div class="mt-8 flex flex-wrap justify-center items-center gap-3 text-xs font-mono text-outline">
         <span class="px-3 py-1.5 rounded border border-outline-variant/50 bg-surface-container-low">UPI Payments</span>
-        <span class="px-3 py-1.5 rounded border border-outline-variant/50 bg-surface-container-low">Debit &amp; Credit Cards</span>
-        <span class="px-3 py-1.5 rounded border border-outline-variant/50 bg-surface-container-low">ATM Withdrawals</span>
-        <span class="px-3 py-1.5 rounded border border-outline-variant/50 bg-surface-container-low">NetBanking Alerts</span>
+        <span class="px-3 py-1.5 rounded border border-outline-variant/50 bg-surface-container-low">Debit &amp; Credit
+          Cards</span>
+        <span class="px-3 py-1.5 rounded border border-outline-variant/50 bg-surface-container-low">ATM
+          Withdrawals</span>
+        <span class="px-3 py-1.5 rounded border border-outline-variant/50 bg-surface-container-low">NetBanking
+          Alerts</span>
       </div>
 
     </div>
@@ -611,7 +732,7 @@
   <!-- ========================================================================= -->
   <section class="py-16 md:py-24 border-t border-outline-variant/40 bg-surface-container-lowest/40" id="features">
     <div class="max-w-6xl mx-auto px-4 md:px-6">
-      
+
       <div class="text-center max-w-2xl mx-auto mb-12">
         <div class="font-label-sm text-xs uppercase tracking-widest text-primary font-bold mb-2">Core Capabilities</div>
         <h2 class="font-headline-xl text-2xl sm:text-3xl md:text-4xl text-on-surface">
@@ -621,9 +742,10 @@
 
       <!-- 6 User-Outcome Feature Cards -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        
+
         <div class="numismatic-card p-6 rounded-xl border border-outline-variant/60 bg-surface-container-low/70">
-          <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-primary mb-4">
+          <div
+            class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-primary mb-4">
             <span class="material-symbols-outlined text-[24px]">bolt</span>
           </div>
           <h3 class="font-headline-md text-lg text-on-surface mb-2 font-semibold">Automatic tracking</h3>
@@ -633,7 +755,8 @@
         </div>
 
         <div class="numismatic-card p-6 rounded-xl border border-outline-variant/60 bg-surface-container-low/70">
-          <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-secondary mb-4">
+          <div
+            class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-secondary mb-4">
             <span class="material-symbols-outlined text-[24px]">touch_app</span>
           </div>
           <h3 class="font-headline-md text-lg text-on-surface mb-2 font-semibold">One-tap categories</h3>
@@ -643,7 +766,8 @@
         </div>
 
         <div class="numismatic-card p-6 rounded-xl border border-outline-variant/60 bg-surface-container-low/70">
-          <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-primary mb-4">
+          <div
+            class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-primary mb-4">
             <span class="material-symbols-outlined text-[24px]">pie_chart</span>
           </div>
           <h3 class="font-headline-md text-lg text-on-surface mb-2 font-semibold">Simple spending overview</h3>
@@ -653,7 +777,8 @@
         </div>
 
         <div class="numismatic-card p-6 rounded-xl border border-outline-variant/60 bg-surface-container-low/70">
-          <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-secondary mb-4">
+          <div
+            class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-secondary mb-4">
             <span class="material-symbols-outlined text-[24px]">link_off</span>
           </div>
           <h3 class="font-headline-md text-lg text-on-surface mb-2 font-semibold">No bank connection</h3>
@@ -663,7 +788,8 @@
         </div>
 
         <div class="numismatic-card p-6 rounded-xl border border-outline-variant/60 bg-surface-container-low/70">
-          <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-primary mb-4">
+          <div
+            class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-primary mb-4">
             <span class="material-symbols-outlined text-[24px]">cloud_off</span>
           </div>
           <h3 class="font-headline-md text-lg text-on-surface mb-2 font-semibold">Works offline</h3>
@@ -673,7 +799,8 @@
         </div>
 
         <div class="numismatic-card p-6 rounded-xl border border-outline-variant/60 bg-surface-container-low/70">
-          <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-secondary mb-4">
+          <div
+            class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-secondary mb-4">
             <span class="material-symbols-outlined text-[24px]">android</span>
           </div>
           <h3 class="font-headline-md text-lg text-on-surface mb-2 font-semibold">Built for Android</h3>
@@ -693,14 +820,16 @@
   <!-- ========================================================================= -->
   <section class="py-14 border-t border-outline-variant/40 bg-surface-container-low/30" id="trust-zerofrik">
     <div class="max-w-4xl mx-auto px-4 md:px-6 text-center">
-      
+
       <h3 class="font-headline-md text-xl text-primary font-semibold mb-2">Built by ZeroFrik</h3>
       <p class="font-body-sm text-sm text-on-surface-variant max-w-xl mx-auto mb-4 leading-relaxed">
         1Tap is an early product from ZeroFrik, built to make everyday expense tracking faster and more private.
       </p>
 
-      <div class="inline-block p-4 rounded-xl border border-outline-variant/50 bg-surface-container-lowest max-w-xl text-xs text-outline leading-relaxed font-mono">
-        <span class="font-bold text-secondary">Early Access Note:</span> 1Tap is currently in early access. We're actively improving transaction detection, categorization and bank compatibility based on user feedback.
+      <div
+        class="inline-block p-4 rounded-xl border border-outline-variant/50 bg-surface-container-lowest max-w-xl text-xs text-outline leading-relaxed font-mono">
+        <span class="font-bold text-secondary">Early Access Note:</span> 1Tap is currently in early access. We're
+        actively improving transaction detection, categorization and bank compatibility based on user feedback.
       </div>
 
     </div>
@@ -712,28 +841,31 @@
   <!-- ========================================================================= -->
   <section class="py-16 md:py-24 border-t border-outline-variant/40 bg-surface-container-lowest/40" id="faq">
     <div class="max-w-3xl mx-auto px-4 md:px-6">
-      
+
       <div class="text-center mb-10">
         <div class="font-label-sm text-xs uppercase tracking-widest text-primary font-bold mb-1">Clear Answers</div>
         <h2 class="font-headline-xl text-2xl sm:text-3xl text-on-surface">Frequently Asked Questions</h2>
       </div>
 
       <div class="space-y-3" id="faq-accordion">
-        
+
         <!-- Q1 -->
         <div class="rounded-xl border border-outline-variant/60 bg-surface-container-low overflow-hidden">
-          <button class="w-full p-4 text-left font-semibold text-on-surface flex justify-between items-center text-sm md:text-base focus:outline-none faq-btn">
+          <button
+            class="w-full p-4 text-left font-semibold text-on-surface flex justify-between items-center text-sm md:text-base focus:outline-none faq-btn">
             <span>How does 1Tap track expenses?</span>
             <span class="material-symbols-outlined text-primary text-[20px] transition-transform">expand_more</span>
           </button>
           <div class="px-4 pb-4 text-xs md:text-sm text-on-surface-variant hidden faq-content leading-relaxed">
-            1Tap detects supported bank transaction messages on your Android phone and automatically turns them into expense entries for fast categorization.
+            1Tap detects supported bank transaction messages on your Android phone and automatically turns them into
+            expense entries for fast categorization.
           </div>
         </div>
 
         <!-- Q2 -->
         <div class="rounded-xl border border-outline-variant/60 bg-surface-container-low overflow-hidden">
-          <button class="w-full p-4 text-left font-semibold text-on-surface flex justify-between items-center text-sm md:text-base focus:outline-none faq-btn">
+          <button
+            class="w-full p-4 text-left font-semibold text-on-surface flex justify-between items-center text-sm md:text-base focus:outline-none faq-btn">
             <span>Does 1Tap require my bank login?</span>
             <span class="material-symbols-outlined text-primary text-[20px] transition-transform">expand_more</span>
           </button>
@@ -744,18 +876,21 @@
 
         <!-- Q3 -->
         <div class="rounded-xl border border-outline-variant/60 bg-surface-container-low overflow-hidden">
-          <button class="w-full p-4 text-left font-semibold text-on-surface flex justify-between items-center text-sm md:text-base focus:outline-none faq-btn">
+          <button
+            class="w-full p-4 text-left font-semibold text-on-surface flex justify-between items-center text-sm md:text-base focus:outline-none faq-btn">
             <span>Why does 1Tap need transaction-message permission?</span>
             <span class="material-symbols-outlined text-primary text-[20px] transition-transform">expand_more</span>
           </button>
           <div class="px-4 pb-4 text-xs md:text-sm text-on-surface-variant hidden faq-content leading-relaxed">
-            Transaction-message access allows 1Tap to automatically detect spending alerts sent by your bank so you don't have to enter expenses manually.
+            Transaction-message access allows 1Tap to automatically detect spending alerts sent by your bank so you
+            don't have to enter expenses manually.
           </div>
         </div>
 
         <!-- Q4 -->
         <div class="rounded-xl border border-outline-variant/60 bg-surface-container-low overflow-hidden">
-          <button class="w-full p-4 text-left font-semibold text-on-surface flex justify-between items-center text-sm md:text-base focus:outline-none faq-btn">
+          <button
+            class="w-full p-4 text-left font-semibold text-on-surface flex justify-between items-center text-sm md:text-base focus:outline-none faq-btn">
             <span>Does 1Tap work offline?</span>
             <span class="material-symbols-outlined text-primary text-[20px] transition-transform">expand_more</span>
           </button>
@@ -766,7 +901,8 @@
 
         <!-- Q5 -->
         <div class="rounded-xl border border-outline-variant/60 bg-surface-container-low overflow-hidden">
-          <button class="w-full p-4 text-left font-semibold text-on-surface flex justify-between items-center text-sm md:text-base focus:outline-none faq-btn">
+          <button
+            class="w-full p-4 text-left font-semibold text-on-surface flex justify-between items-center text-sm md:text-base focus:outline-none faq-btn">
             <span>Where is my expense data stored?</span>
             <span class="material-symbols-outlined text-primary text-[20px] transition-transform">expand_more</span>
           </button>
@@ -777,23 +913,27 @@
 
         <!-- Q6 -->
         <div class="rounded-xl border border-outline-variant/60 bg-surface-container-low overflow-hidden">
-          <button class="w-full p-4 text-left font-semibold text-on-surface flex justify-between items-center text-sm md:text-base focus:outline-none faq-btn">
+          <button
+            class="w-full p-4 text-left font-semibold text-on-surface flex justify-between items-center text-sm md:text-base focus:outline-none faq-btn">
             <span>Which transactions can 1Tap detect?</span>
             <span class="material-symbols-outlined text-primary text-[20px] transition-transform">expand_more</span>
           </button>
           <div class="px-4 pb-4 text-xs md:text-sm text-on-surface-variant hidden faq-content leading-relaxed">
-            1Tap identifies supported debit alerts from UPI purchases, card transactions, ATM withdrawals, and standard bank SMS notifications.
+            1Tap identifies supported debit alerts from UPI purchases, card transactions, ATM withdrawals, and standard
+            bank SMS notifications.
           </div>
         </div>
 
         <!-- Q7 -->
         <div class="rounded-xl border border-outline-variant/60 bg-surface-container-low overflow-hidden">
-          <button class="w-full p-4 text-left font-semibold text-on-surface flex justify-between items-center text-sm md:text-base focus:outline-none faq-btn">
+          <button
+            class="w-full p-4 text-left font-semibold text-on-surface flex justify-between items-center text-sm md:text-base focus:outline-none faq-btn">
             <span>What happens with transfers and refunds?</span>
             <span class="material-symbols-outlined text-primary text-[20px] transition-transform">expand_more</span>
           </button>
           <div class="px-4 pb-4 text-xs md:text-sm text-on-surface-variant hidden faq-content leading-relaxed">
-            Currently, outgoing transfers are logged as transactions under your spending ledger. Specialized classification for self-transfers and refunds is actively being refined in early access.
+            Currently, outgoing transfers are logged as transactions under your spending ledger. Specialized
+            classification for self-transfers and refunds is actively being refined in early access.
           </div>
         </div>
 
@@ -808,8 +948,9 @@
   <!-- ========================================================================= -->
   <section class="py-16 md:py-24 border-t border-outline-variant/40 relative overflow-hidden" id="download">
     <div class="max-w-4xl mx-auto px-4 md:px-6 relative">
-      <div class="rounded-2xl border border-primary/30 bg-surface-container-low p-8 md:p-12 text-center shadow-2xl backdrop-blur-lg">
-        
+      <div
+        class="rounded-2xl border border-primary/30 bg-surface-container-low p-8 md:p-12 text-center shadow-2xl backdrop-blur-lg">
+
         <h2 class="font-headline-xl text-3xl sm:text-4xl text-primary mb-3">
           Stop entering every expense manually.
         </h2>
@@ -819,9 +960,12 @@
 
         <!-- CTA Button -->
         <div class="flex items-center justify-center">
-          <a class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded bg-primary-container text-on-primary-container font-label-md text-sm font-bold shadow-[0_0_24px_rgba(217,173,103,0.35)] hover:shadow-[0_0_36px_rgba(217,173,103,0.55)] active:scale-95 transition-all" href="#download">
+          <a class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded bg-primary-container text-on-primary-container font-label-md text-sm font-bold shadow-[0_0_24px_rgba(217,173,103,0.35)] hover:shadow-[0_0_36px_rgba(217,173,103,0.55)] active:scale-95 transition-all"
+            href="#download">
             <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-              <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"></path>
+              <path
+                d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z">
+              </path>
             </svg>
             <span>Get 1Tap for Android</span>
           </a>
@@ -843,15 +987,16 @@
   <!-- 12. FOOTER                                                                -->
   <!-- ========================================================================= -->
   <footer class="w-full border-t border-outline-variant/40 bg-surface-container-lowest py-8 px-4 md:px-6">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-on-surface-variant">
-      
+    <div
+      class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-on-surface-variant">
+
       <div class="flex items-center gap-2 font-headline-md text-primary font-bold text-base">
-        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4llE_V8EQt35u5RE7dGzoDaLVb8lqWxIfjGh1ZwuXBb2cQSQ4AfmZRjDxq8OOvnODce6geJQ1yaJpCJ5xvp-Gz7WIhxr-pgF7PlxVgTZbUgMg5DSPejd6qHF9KDcf72S_4E5SgiWcFYnmRKwx2eXENeWWT0uPqqcRvPnNPdteDcDEqrlz5VelMVLOvFnM1a8YobhCgN1rCMQtV4WkHWsYweEVOjoisCgmJ8jykeEWNx7lkXP6BjdMZlqrZ_3kKo21HQ" alt="1Tap Logo" class="w-6 h-6 rounded-full object-cover shrink-0">
+        <img src="logo.svg" alt="1Tap Logo" class="w-6 h-6 rounded-full object-cover shrink-0">
         <span>1Tap by ZeroFrik</span>
       </div>
 
       <div>
-        © 2025 ZeroFrik. Automatic expense tracking. Private by design.
+        © 2026 ZeroFrik. Automatic expense tracking. Private by design.
       </div>
 
       <nav class="flex items-center gap-4 font-label-sm text-[11px] uppercase tracking-wider text-outline">
@@ -860,10 +1005,50 @@
         <a class="hover:text-primary transition-colors" href="#features">Features</a>
         <span>•</span>
         <a class="hover:text-primary transition-colors" href="#faq">FAQ</a>
+        <span>•</span>
+        <a class="hover:text-primary transition-colors cursor-pointer" href="#" onclick="openContactModal(event)">Contact</a>
       </nav>
 
     </div>
   </footer>
+
+  <!-- ========================================================================= -->
+  <!-- CONTACT MODAL                                                             -->
+  <!-- ========================================================================= -->
+  <div id="contact-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 sm:p-6" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <!-- Backdrop -->
+    <div class="fixed inset-0 bg-[#0c0e12]/80 backdrop-blur-md transition-opacity" aria-hidden="true" onclick="closeContactModal()"></div>
+    
+    <!-- Modal Dialog -->
+    <div class="relative bg-surface-container-low rounded-2xl shadow-2xl w-full max-w-md overflow-hidden border border-outline-variant/60 transform transition-all text-on-surface">
+      <div class="px-6 py-5 border-b border-outline-variant/40 flex items-center justify-between bg-surface-container-lowest">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-[20px]">mail</span>
+          <h3 class="text-base font-headline-md font-bold text-on-surface" id="modal-title">Contact 1Tap Team</h3>
+        </div>
+        <button type="button" class="text-outline hover:text-on-surface transition-colors rounded-full p-1 hover:bg-surface-container-high focus:outline-none" onclick="closeContactModal()">
+          <span class="material-symbols-outlined text-xl" aria-hidden="true">close</span>
+        </button>
+      </div>
+      
+      <form id="contact-form" class="px-6 py-6 space-y-4">
+        <div>
+          <label for="contact-email" class="block text-xs font-mono font-medium text-on-surface-variant mb-1.5 uppercase tracking-wider">Email Address</label>
+          <input type="email" id="contact-email" name="email" required class="block w-full rounded-lg border border-outline-variant/60 bg-surface-container-lowest px-3.5 py-2.5 text-sm text-on-surface placeholder-outline/60 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="you@example.com">
+        </div>
+        <div>
+          <label for="contact-body" class="block text-xs font-mono font-medium text-on-surface-variant mb-1.5 uppercase tracking-wider">Message / Inquiry</label>
+          <textarea id="contact-body" name="message" rows="4" required class="block w-full rounded-lg border border-outline-variant/60 bg-surface-container-lowest px-3.5 py-2.5 text-sm text-on-surface placeholder-outline/60 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="How can we help you?"></textarea>
+        </div>
+        <div class="pt-2">
+          <button type="submit" id="contact-submit" class="w-full inline-flex items-center justify-center h-11 px-4 text-xs font-mono uppercase tracking-wider font-bold bg-primary-container text-on-primary-container hover:brightness-110 active:scale-95 transition-all rounded-lg shadow-[0_0_16px_rgba(217,173,103,0.3)]">
+            Send Message
+          </button>
+        </div>
+        <div id="contact-status" class="hidden text-xs text-center font-mono mt-2 py-2 rounded-lg"></div>
+      </form>
+    </div>
+  </div>
 
 
   <!-- ========================================================================= -->
@@ -920,7 +1105,94 @@
         }
       });
     });
+
+    // 4. Contact Modal Handler & Google Sheets Submission
+    function openContactModal(e) {
+      if (e) e.preventDefault();
+      const modal = document.getElementById('contact-modal');
+      if (modal) {
+        modal.classList.remove('hidden');
+        document.getElementById('contact-email')?.focus();
+      }
+    }
+    
+    function closeContactModal() {
+      const modal = document.getElementById('contact-modal');
+      if (modal) {
+        modal.classList.add('hidden');
+        document.getElementById('contact-form')?.reset();
+        const statusEl = document.getElementById('contact-status');
+        if (statusEl) {
+          statusEl.classList.add('hidden');
+          statusEl.textContent = '';
+          statusEl.className = 'hidden text-xs text-center font-mono mt-2 py-2 rounded-lg';
+        }
+      }
+    }
+
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+      contactForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const submitBtn = document.getElementById('contact-submit');
+        const statusEl = document.getElementById('contact-status');
+        const email = document.getElementById('contact-email').value;
+        const message = document.getElementById('contact-body').value;
+        
+        // Setup UI for submission
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Sending...';
+          submitBtn.classList.add('opacity-70');
+        }
+        if (statusEl) statusEl.classList.add('hidden');
+        
+        // Google Sheet Web App Webhook URL
+        const WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbw3V4ZcGXQQSsza3Q8Npd8CwKawwTWMYlqIKhiO3lnpSQgm-uAiA6BxZFNdF1htJPep/exec';
+        
+        try {
+          const formData = new FormData();
+          formData.append('email', email);
+          formData.append('message', message);
+          formData.append('source', '1tap');
+          formData.append('form', 'contact_1tap');
+
+          await fetch(WEBHOOK_URL, {
+            method: 'POST',
+            body: formData,
+            mode: 'no-cors'
+          });
+          
+          if (statusEl) {
+            statusEl.textContent = 'Message sent successfully!';
+            statusEl.className = 'text-xs text-center font-mono mt-3 py-2 rounded-lg bg-emerald-500/15 text-emerald-400 border border-emerald-500/30';
+            statusEl.classList.remove('hidden');
+          }
+          contactForm.reset();
+          
+          setTimeout(() => {
+            closeContactModal();
+          }, 2000);
+          
+        } catch (error) {
+          console.error('Error submitting form:', error);
+          if (statusEl) {
+            statusEl.textContent = 'Error sending message. Please try again.';
+            statusEl.className = 'text-xs text-center font-mono mt-3 py-2 rounded-lg bg-rose-500/15 text-rose-400 border border-rose-500/30';
+            statusEl.classList.remove('hidden');
+          }
+        } finally {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Send Message';
+            submitBtn.classList.remove('opacity-70');
+          }
+        }
+      });
+    }
   </script>
 
 </body>
+
 </html>
