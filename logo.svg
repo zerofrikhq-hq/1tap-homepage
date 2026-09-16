@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Canvas Palette: Deep Obsidian Charcoal with Warm Ambient Center Glow -->
+    <radialGradient id="luxCanvas" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#1c1f26"/>
+      <stop offset="55%" stop-color="#121419"/>
+      <stop offset="85%" stop-color="#0b0c0f"/>
+      <stop offset="100%" stop-color="#060708"/>
+    </radialGradient>
+    <!-- Master Burnished Antique Gold & Milled Brass Gradients -->
+    <linearGradient id="coinGoldRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf4df"/>
+      <stop offset="18%" stop-color="#d9ad67"/>
+      <stop offset="38%" stop-color="#936d33"/>
+      <stop offset="55%" stop-color="#dfb978"/>
+      <stop offset="78%" stop-color="#7a5524"/>
+      <stop offset="100%" stop-color="#f7e4c1"/>
+    </linearGradient>
+    <!-- Banknote & Currency Intaglio Ink (Botanical Sage & Forest Green) -->
+    <linearGradient id="banknoteSage" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7be6b0"/>
+      <stop offset="40%" stop-color="#3e9b6e"/>
+      <stop offset="80%" stop-color="#1d5c3d"/>
+      <stop offset="100%" stop-color="#0f3422"/>
+    </linearGradient>
+    <!-- Coin Field Core Face (Deep Fluted Metal Plate) -->
+    <radialGradient id="coinPlate" cx="42%" cy="36%" r="68%">
+      <stop offset="0%" stop-color="#22272e"/>
+      <stop offset="50%" stop-color="#14161c"/>
+      <stop offset="85%" stop-color="#0c0e12"/>
+      <stop offset="100%" stop-color="#08080a"/>
+    </radialGradient>
+    <!-- Chiseled 3D Numeral Fill -->
+    <linearGradient id="numeralGold" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#fffdf7"/>
+      <stop offset="25%" stop-color="#f5e0b5"/>
+      <stop offset="50%" stop-color="#d4af6e"/>
+      <stop offset="75%" stop-color="#9c7336"/>
+      <stop offset="100%" stop-color="#f3d79b"/>
+    </linearGradient>
+    <linearGradient id="chiseledShade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4a3212"/>
+      <stop offset="50%" stop-color="#8a6125"/>
+      <stop offset="100%" stop-color="#ffd899"/>
+    </linearGradient>
+    <!-- Rich physical drop shadows for minted coin weight -->
+    <filter id="mintRelief" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#000000" flood-opacity="0.95"/>
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <filter id="numeralRelief" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.9"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.9"/>
+    </filter>
+  </defs>
+  <!-- Full Icon Background for App Launcher Grids -->
+  <rect width="512" height="512" fill="url(#luxCanvas)"/>
+  <rect width="512" height="512" fill="none" stroke="rgba(245, 242, 235, 0.06)" stroke-width="2"/>
+  <!-- Subtle Ambient Vignette & Warm Rim -->
+  <circle cx="256" cy="256" r="236" fill="none" stroke="rgba(217, 173, 103, 0.08)" stroke-width="1"/>
+  <!-- ================= MASTER NUMISMATIC MEDALLION (OPTIMIZED & CENTERED FOR APP ICON) ================= -->
+  <g filter="url(#mintRelief)">
+    <!-- Deep Outer Bevel Shadow Trench -->
+    <circle cx="256" cy="256" r="216" fill="#08090c"/>
+    
+    <!-- Outer Reeded Edge / Milled Coin Grooves (High density for app launcher icons) -->
+    <circle cx="256" cy="256" r="210" fill="none" stroke="#2c2419" stroke-width="11"/>
+    <circle cx="256" cy="256" r="210" fill="none" stroke="url(#coinGoldRim)" stroke-width="6" stroke-dasharray="3 5"/>
+    <!-- High-Relief Outer Coin Bezel -->
+    <circle cx="256" cy="256" r="200" fill="url(#coinPlate)" stroke="url(#coinGoldRim)" stroke-width="5.5"/>
+    
+    <!-- Precision Currency Guilloché Rosette Borders -->
+    <circle cx="256" cy="256" r="186" fill="none" stroke="rgba(217, 173, 103, 0.55)" stroke-width="1.8"/>
+    <circle cx="256" cy="256" r="181" fill="none" stroke="rgba(62, 155, 110, 0.5)" stroke-width="1.5" stroke-dasharray="3 4"/>
+    <!-- Banknote Security Guilloché Geometry (12-lobed Currency Spirograph) -->
+    <g opacity="0.36" stroke="url(#banknoteSage)" stroke-width="1.2" fill="none">
+      <ellipse cx="256" cy="256" rx="172" ry="58" transform="rotate(0 256 256)"/>
+      <ellipse cx="256" cy="256" rx="172" ry="58" transform="rotate(15 256 256)"/>
+      <ellipse cx="256" cy="256" rx="172" ry="58" transform="rotate(30 256 256)"/>
+      <ellipse cx="256" cy="256" rx="172" ry="58" transform="rotate(45 256 256)"/>
+      <ellipse cx="256" cy="256" rx="172" ry="58" transform="rotate(60 256 256)"/>
+      <ellipse cx="256" cy="256" rx="172" ry="58" transform="rotate(75 256 256)"/>
+      <ellipse cx="256" cy="256" rx="172" ry="58" transform="rotate(90 256 256)"/>
+      <ellipse cx="256" cy="256" rx="172" ry="58" transform="rotate(105 256 256)"/>
+      <ellipse cx="256" cy="256" rx="172" ry="58" transform="rotate(120 256 256)"/>
+      <ellipse cx="256" cy="256" rx="172" ry="58" transform="rotate(135 256 256)"/>
+      <ellipse cx="256" cy="256" rx="172" ry="58" transform="rotate(150 256 256)"/>
+      <ellipse cx="256" cy="256" rx="172" ry="58" transform="rotate(165 256 256)"/>
+    </g>
+    <!-- Golden Guilloché Inner Harmonic Ring -->
+    <g opacity="0.25" stroke="url(#coinGoldRim)" stroke-width="1" fill="none">
+      <ellipse cx="256" cy="256" rx="138" ry="46" transform="rotate(22.5 256 256)"/>
+      <ellipse cx="256" cy="256" rx="138" ry="46" transform="rotate(67.5 256 256)"/>
+      <ellipse cx="256" cy="256" rx="138" ry="46" transform="rotate(112.5 256 256)"/>
+      <ellipse cx="256" cy="256" rx="138" ry="46" transform="rotate(157.5 256 256)"/>
+    </g>
+    <!-- Inner Stepped Cavity (Recessed Die-Bed) -->
+    <circle cx="256" cy="256" r="134" fill="#0e1014" stroke="#040507" stroke-width="5"/>
+    <circle cx="256" cy="256" r="132" fill="none" stroke="rgba(245, 242, 235, 0.16)" stroke-width="1.5"/>
+    <circle cx="256" cy="256" r="128" fill="none" stroke="rgba(62, 155, 110, 0.35)" stroke-width="1" stroke-dasharray="2 3"/>
+  </g>
+  <!-- ================= TACTILE FINGERPRINT BIOMETRIC RIDGES ================= -->
+  <g opacity="0.45">
+    <path d="M 204 274 C 204 214, 228 178, 256 178 C 284 178, 308 214, 308 274"
+          fill="none" stroke="rgba(245, 242, 235, 0.32)" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 188 290 C 188 200, 218 156, 256 156 C 294 156, 324 200, 324 290"
+          fill="none" stroke="rgba(217, 173, 103, 0.45)" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M 172 306 C 172 188, 210 136, 256 136 C 302 136, 340 188, 340 306"
+          fill="none" stroke="rgba(62, 155, 110, 0.4)" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 5"/>
+  </g>
+  <!-- ================= MASTER CLASSICAL BANKNOTE NUMERAL '1' (ENLARGED FOR APP ICON LEGIBILITY) ================= -->
+  <!-- Scaled up 1.4x and perfectly centered at (256, 250) for immediate 60x60px recognition -->
+  <g filter="url(#numeralRelief)" transform="translate(256, 250) scale(1.38) translate(-256, -195)">
+    <!-- Base Die-Recess Drop Shadow (Intaglio cut) -->
+    <path d="M 218 162
+             C 230 158, 244 148, 250 134
+             L 266 134
+             L 266 238
+             L 282 238
+             C 288 238, 292 240, 292 246
+             C 292 250, 288 252, 282 252
+             L 230 252
+             C 224 252, 220 250, 220 246
+             C 220 240, 224 238, 230 238
+             L 246 238
+             L 246 156
+             C 238 162, 228 166, 220 168
+             Z"
+          fill="#020304" transform="translate(0, 3.5)"/>
+    <!-- Solid Cast Gold Base -->
+    <path d="M 220 162
+             C 232 157, 243 146, 250 134
+             L 266 134
+             L 266 238
+             L 282 238
+             C 287 238, 291 241, 291 246
+             C 291 250, 287 252, 282 252
+             L 230 252
+             C 225 252, 221 250, 221 246
+             C 221 241, 225 238, 230 238
+             L 246 238
+             L 246 156
+             C 238 161, 229 165, 220 167
+             Z"
+          fill="url(#numeralGold)" stroke="url(#chiseledShade)" stroke-width="1.8" stroke-linejoin="round"/>
+    <!-- Left Chiseled Bevel / Shadow Facet for 3D Relief -->
+    <path d="M 220 162
+             C 232 157, 243 146, 250 134
+             L 256 134
+             L 256 245
+             L 221 245
+             C 221 241, 225 238, 230 238
+             L 246 238
+             L 246 156
+             C 238 161, 229 165, 220 167
+             Z"
+          fill="url(#chiseledShade)" opacity="0.65"/>
+    <!-- Polished Center Spine Specular Light line (Unbroken, clean gold finish) -->
+    <line x1="256" y1="136" x2="256" y2="245" stroke="#ffffff" stroke-width="2.2" opacity="0.95" stroke-linecap="round"/>
+    <path d="M 222 163 C 234 158, 244 148, 250 136" fill="none" stroke="#ffffff" stroke-width="1.8" opacity="0.85"/>
+    <line x1="226" y1="245" x2="286" y2="245" stroke="#ffffff" stroke-width="1.5" opacity="0.8"/>
+  </g>
+  <!-- Subtle Lower Arc Gold Accent Inscription -->
+  <g opacity="0.85">
+    <text x="256" y="366"
+          text-anchor="middle"
+          font-family="system-ui, -apple-system, serif"
+          font-size="10.5"
+          font-weight="700"
+          letter-spacing="4.5"
+          fill="#d9ad67">★ OFFLINE VAULT ★</text>
+  </g>
+</svg>
