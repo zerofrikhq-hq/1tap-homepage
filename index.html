@@ -1,194 +1,139 @@
-<!DOCTYPE html>
-<html class="dark scroll-smooth" lang="en">
-
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8RMWKEBE15"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-8RMWKEBE15');
-  </script>
-
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <!-- Primary SEO Meta Tags -->
-  <title>1Tap: SMS Expense Tracker for Android | ZeroFrik</title>
-  <meta name="title" content="1Tap: SMS Expense Tracker for Android | ZeroFrik">
-  <meta name="description"
-    content="1Tap is an Android SMS expense tracker that identifies supported bank-account debit and credit messages on your device, helping you organize spending without a bank login or cloud account.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://1tap.zerofrik.com/">
-
-  <!-- Favicons -->
-  <link rel="icon" type="image/svg+xml" href="logo.svg">
-  <link rel="apple-touch-icon" href="logo.svg">
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="1Tap by ZeroFrik">
-  <meta property="og:url" content="https://1tap.zerofrik.com/">
-  <meta property="og:title" content="1Tap: SMS Expense Tracker for Android">
-  <meta property="og:description"
-    content="Track supported bank-account transactions from SMS on your Android phone. Organize spending privately without a bank login or cloud account.">
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="1Tap: SMS Expense Tracker for Android">
-  <meta name="twitter:description"
-    content="Track supported bank-account transactions from SMS on Android and organize your spending privately.">
-
-  <!-- Structured Data: SoftwareApplication -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "1Tap",
-    "operatingSystem": "Android",
-    "applicationCategory": "FinanceApplication",
-    "url": "https://1tap.zerofrik.com/",
-    "publisher": {
-      "@type": "Organization",
-      "name": "ZeroFrik",
-      "url": "https://zerofrik.com/"
-    },
-    "description": "1Tap is an Android SMS expense tracker that identifies supported bank-account debit and credit messages on your device, helping you organize spending without a bank login or cloud account."
-  }
-  </script>
-
-  <!-- Structured Data: FAQPage (Verbatim matching visible page content) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How does 1Tap track expenses?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "1Tap checks supported bank transaction SMS on your Android phone. When a message clearly confirms money entering or leaving a bank account, 1Tap can turn it into a transaction for you to review and categorize."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does 1Tap require my bank login?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. 1Tap does not ask for your bank username, password or internet-banking credentials."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Why does 1Tap need transaction-message access?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "It uses supported bank transaction SMS to identify eligible bank-account debits and credits locally on your phone."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does 1Tap work offline?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Core expense tracking, categorization, analytics and local history do not depend on a cloud account or server connection."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Where is my transaction data stored?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Your 1Tap transaction history is stored locally on your Android device."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Which transactions can 1Tap detect automatically?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "1Tap focuses on supported SMS messages that clearly show money entering or leaving a bank account, including supported bank debits, credits, UPI-linked bank debits, ATM withdrawals and bank transfers. Credit-card purchase messages or merchant confirmations that do not prove bank-account movement are not treated as separate automatic transactions."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What about cash expenses?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "You can add cash expenses, income and other transactions manually in 1Tap."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What happens with transfers and refunds?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Currently, confirmed outgoing transfers are logged under your ledger. Transfer-specific classification and refund reconciliation are actively being refined in closed testing."
-        }
-      }
-    ]
-  }
-  </script>
-
-  <!-- Material Symbols Outlined Font -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-    rel="stylesheet">
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-  <link
-    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap"
-    rel="stylesheet">
-
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <script id="tailwind-config">
+<!DOCTYPE html><html class="dark" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>1Tap: SMS Expense Tracker for Android | ZeroFrik</title>
+<meta name="description" content="1Tap turns supported bank-account debit and credit SMS into a private spending ledger on your Android phone, without a bank login or cloud account.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://1tap.zerofrik.com/">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="apple-touch-icon" href="logo.svg">
+<!-- Material Symbols Outlined Font -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Editorial Serif and Technical Monospace Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
     tailwind.config = {
       darkMode: "class",
       theme: {
         extend: {
           "colors": {
-            "surface": "#121316",
-            "surface-dim": "#121316",
-            "surface-bright": "#38393c",
-            "surface-variant": "#222327",
-            "surface-container-lowest": "#0d0e11",
-            "surface-container-low": "#1b1b1f",
-            "surface-container": "#1f1f23",
-            "surface-container-high": "#292a2d",
-            "surface-container-highest": "#343538",
-            "primary": "#f7c87f",
-            "primary-container": "#d9ad67",
-            "on-primary": "#432c00",
-            "on-primary-container": "#281900",
-            "secondary": "#7dd9a7",
-            "secondary-container": "#007249",
             "on-secondary-container": "#96f3c0",
-            "tertiary": "#ffc1b1",
-            "tertiary-container": "#ff997e",
+            "error-container": "#93000a",
+            "secondary-container": "#007249",
+            "surface-container": "#1f1f23",
             "outline": "#9b8f80",
+            "on-surface-variant": "#d2c4b4",
+            "secondary-fixed": "#99f6c2",
+            "inverse-primary": "#7a581a",
             "outline-variant": "#4e4539",
+            "on-secondary-fixed-variant": "#005233",
+            "on-tertiary-container": "#7a2d18",
+            "surface-variant": "#343538",
+            "primary-fixed-dim": "#edbf77",
+            "surface": "#121316",
+            "on-primary-fixed": "#281900",
+            "on-secondary-fixed": "#002112",
+            "inverse-surface": "#e3e2e6",
+            "primary-fixed": "#ffdead",
+            "secondary": "#7dd9a7",
+            "on-tertiary-fixed-variant": "#7c2e19",
+            "primary": "#f7c87f",
+            "surface-container-low": "#1b1b1f",
+            "on-primary-container": "#5f4001",
+            "primary-container": "#d9ad67",
+            "tertiary-container": "#ff997e",
             "on-surface": "#e3e2e6",
-            "on-surface-variant": "#d2c4b4"
+            "secondary-fixed-dim": "#7dd9a7",
+            "on-error": "#690005",
+            "on-tertiary-fixed": "#3c0800",
+            "on-tertiary": "#5d1805",
+            "tertiary-fixed-dim": "#ffb4a1",
+            "on-secondary": "#003822",
+            "surface-container-high": "#292a2d",
+            "surface-tint": "#edbf77",
+            "error": "#ffb4ab",
+            "surface-dim": "#121316",
+            "on-primary-fixed-variant": "#604102",
+            "tertiary-fixed": "#ffdbd2",
+            "inverse-on-surface": "#2f3033",
+            "on-error-container": "#ffdad6",
+            "tertiary": "#ffc1b1",
+            "surface-container-highest": "#343538",
+            "on-primary": "#432c00",
+            "background": "#121316",
+            "on-background": "#e3e2e6",
+            "surface-bright": "#38393c",
+            "surface-container-lowest": "#0d0e11"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "gutter": "1.5rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem",
+            "margin-sm": "1rem",
+            "space-sm": "0.5rem",
+            "margin-lg": "3.5rem",
+            "space-md": "1rem",
+            "gutter-sm": "1rem",
+            "gutter-lg": "2rem",
+            "space-xl": "2.5rem",
+            "margin": "2rem"
           },
           "fontFamily": {
-            "headline-xl": ["Newsreader", "serif"],
-            "headline-md": ["Newsreader", "serif"],
-            "body-md": ["Manrope", "sans-serif"],
-            "body-sm": ["Manrope", "sans-serif"],
+            "display-lg-mobile": ["Newsreader", "serif"],
             "label-md": ["JetBrains Mono", "monospace"],
-            "label-sm": ["JetBrains Mono", "monospace"]
+            "label-lg": ["JetBrains Mono", "monospace"],
+            "display-lg": ["Newsreader", "serif"],
+            "label-sm": ["JetBrains Mono", "monospace"],
+            "body-lg": ["Manrope", "sans-serif"],
+            "headline-xl-mobile": ["Newsreader", "serif"],
+            "headline-md": ["Newsreader", "serif"],
+            "headline-xl": ["Newsreader", "serif"],
+            "body-sm": ["Manrope", "sans-serif"],
+            "body-md": ["Manrope", "sans-serif"]
+          },
+          "fontSize": {
+            "display-lg-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "500" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "500" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+            "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }]
           }
         }
       }
     }
   </script>
+<style>
+    html,
+    body {
+      max-width: 100%;
+      overflow-x: clip;
+    }
 
-  <style>
+    section[id] {
+      scroll-margin-top: 5rem;
+    }
+
+    :focus-visible {
+      outline: 2px solid #f7c87f;
+      outline-offset: 3px;
+    }
+
     .material-symbols-outlined {
       font-family: 'Material Symbols Outlined';
       font-weight: normal;
@@ -205,18 +150,19 @@
       vertical-align: middle;
     }
 
+    /* Numismatic vault subtle guilloche radial watermark */
     .vault-guilloche-bg {
       background-image:
-        radial-gradient(circle at 50% 0%, rgba(217, 173, 103, 0.08) 0%, transparent 60%),
-        radial-gradient(circle at 10% 40%, rgba(125, 217, 167, 0.04) 0%, transparent 40%),
+        radial-gradient(circle at 50% 0%, rgba(217, 173, 103, 0.07) 0%, transparent 60%),
+        radial-gradient(circle at 10% 40%, rgba(62, 155, 110, 0.04) 0%, transparent 40%),
         radial-gradient(circle at 90% 80%, rgba(217, 173, 103, 0.05) 0%, transparent 50%);
     }
 
+    /* Architectural corner registration marks */
     .numismatic-card {
       position: relative;
-      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     }
-
     .numismatic-card::before,
     .numismatic-card::after {
       content: '';
@@ -224,1409 +170,989 @@
       width: 6px;
       height: 6px;
       pointer-events: none;
-      opacity: 0.2;
-      transition: opacity 0.25s ease;
+      opacity: 0.25;
+      transition: opacity 0.3s ease, border-color 0.3s ease;
     }
-
     .numismatic-card::before {
       top: 3px;
       left: 3px;
       border-top: 1px solid #D9AD67;
       border-left: 1px solid #D9AD67;
     }
-
     .numismatic-card::after {
       bottom: 3px;
       right: 3px;
       border-bottom: 1px solid #D9AD67;
       border-right: 1px solid #D9AD67;
     }
-
     .numismatic-card:hover::before,
     .numismatic-card:hover::after {
-      opacity: 0.8;
+      opacity: 0.85;
     }
 
+    /* Phone mockup frame elevation */
     .vault-phone-frame {
       box-shadow:
-        0 25px 60px -15px rgba(0, 0, 0, 0.95),
-        0 0 35px -5px rgba(217, 173, 103, 0.15),
+        0 25px 60px -15px rgba(0, 0, 0, 0.9),
+        0 0 40px -10px rgba(217, 173, 103, 0.12),
         inset 0 1px 1px 0 rgba(245, 242, 235, 0.15);
     }
 
-    /* Category Chip Selection Transition */
-    .category-chip {
-      transition: all 0.2s ease;
-    }
+    @media (max-width: 639px) {
+      .px-gutter-lg {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+      }
 
-    .category-chip.active {
-      background-color: rgba(217, 173, 103, 0.2);
-      border-color: #f7c87f;
-      color: #f7c87f;
-      box-shadow: 0 0 12px rgba(247, 200, 127, 0.2);
+      .p-space-xl {
+        padding: 1.5rem !important;
+      }
+
+      .text-headline-xl {
+        font-size: 2rem !important;
+        line-height: 1.15 !important;
+      }
+
+      button,
+      a {
+        -webkit-tap-highlight-color: transparent;
+      }
     }
-  </style>
+</style>
 </head>
-
-<body
-  class="bg-surface text-on-surface font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container vault-guilloche-bg min-h-screen">
-
-  <!-- ========================================================================= -->
-  <!-- 1. TOP NAVIGATION BAR                                                     -->
-  <!-- ========================================================================= -->
-  <header
-    class="fixed top-0 left-0 w-full z-50 border-b border-outline-variant/50 bg-surface-container-low/95 backdrop-blur-md">
-    <div class="max-w-6xl mx-auto h-16 px-4 md:px-6 flex items-center justify-between">
-      <!-- Brand Cluster -->
-      <a class="flex items-center gap-2.5 font-headline-md text-xl text-primary font-bold tracking-tight active:scale-95 transition-transform"
-        href="#hero">
-        <img src="logo.svg" alt="1Tap Logo"
-          class="w-8 h-8 rounded-full ring-1 ring-primary/40 object-cover shadow-inner shrink-0">
-        <span>1Tap</span>
-      </a>
-
-      <!-- Desktop Navigation Links -->
-      <nav
-        class="hidden md:flex items-center gap-6 font-label-md text-xs uppercase tracking-wider text-on-surface-variant">
-        <a class="hover:text-primary transition-colors" href="#how-it-works">How It Works</a>
-        <a class="hover:text-primary transition-colors" href="#features">Features</a>
-        <a class="hover:text-primary transition-colors" href="#pricing">Pricing</a>
-        <a class="hover:text-primary transition-colors" href="privacy-policy/">Privacy</a>
-        <a class="hover:text-primary transition-colors" href="#faq">FAQ</a>
-      </nav>
-
-      <!-- Trailing Action Buttons & Mobile Menu Toggle -->
-      <div class="flex items-center gap-2.5">
-        <button onclick="openContactModal(event)"
-          class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded border border-outline-variant/60 bg-surface-container-low hover:bg-surface-container hover:border-primary/50 text-on-surface font-label-md text-xs font-semibold transition-all active:scale-95 cursor-pointer shadow-sm">
-          <span class="material-symbols-outlined text-[16px] text-primary">mail</span>
-          <span>Contact Us</span>
-        </button>
-        <button onclick="handleClosedTestClick(event)"
-          class="inline-flex items-center gap-1.5 px-4 py-2 rounded bg-primary-container text-on-primary-container font-label-md text-xs font-bold hover:brightness-110 active:scale-95 transition-all shadow-[0_0_12px_rgba(217,173,103,0.25)] cursor-pointer">
-          <span class="material-symbols-outlined text-[16px]">science</span>
-          <span>Join Closed Test</span>
-        </button>
-        <button id="mobile-menu-btn" aria-label="Toggle Navigation Menu"
-          class="md:hidden p-1.5 text-on-surface-variant hover:text-primary focus:outline-none">
-          <span class="material-symbols-outlined text-[24px]">menu</span>
-        </button>
-      </div>
-    </div>
-
-    <!-- Mobile Navigation Drawer -->
-    <div id="mobile-menu"
-      class="hidden md:hidden border-t border-outline-variant/40 bg-surface-container-low px-4 py-3 space-y-2 font-label-md text-xs uppercase tracking-wider">
-      <a class="block py-2 text-on-surface-variant hover:text-primary" href="#how-it-works">How It Works</a>
-      <a class="block py-2 text-on-surface-variant hover:text-primary" href="#features">Features</a>
-      <a class="block py-2 text-on-surface-variant hover:text-primary" href="#pricing">Pricing</a>
-      <a class="block py-2 text-on-surface-variant hover:text-primary" href="privacy-policy/">Privacy</a>
-      <a class="block py-2 text-on-surface-variant hover:text-primary" href="#faq">FAQ</a>
-      <button onclick="handleClosedTestClick(event)"
-        class="w-full mt-2 flex items-center justify-center gap-2 px-4 py-2.5 rounded bg-primary-container text-on-primary-container font-label-md text-xs font-bold transition-all cursor-pointer">
-        <span class="material-symbols-outlined text-[16px]">science</span>
-        <span>Join Closed Test</span>
-      </button>
-      <button onclick="openContactModal(event)"
-        class="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded border border-outline-variant/60 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-xs font-semibold transition-all cursor-pointer">
-        <span class="material-symbols-outlined text-[16px] text-primary">mail</span>
-        <span>Contact Us</span>
-      </button>
-    </div>
-  </header>
-
-
-  <!-- ========================================================================= -->
-  <!-- 2. HERO SECTION                                                           -->
-  <!-- ========================================================================= -->
-  <section class="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden" id="hero">
-    <div class="max-w-6xl mx-auto px-4 md:px-6">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-
-        <!-- Left Column: Content & CTAs -->
-        <div class="lg:col-span-7 flex flex-col items-start">
-
-          <!-- Eyebrow Badge Cluster -->
-          <div class="flex flex-wrap items-center gap-2 mb-4">
-            <span
-              class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-secondary/40 bg-secondary-container/20 text-secondary font-label-sm text-[11px] tracking-widest uppercase font-semibold">
-              <span class="material-symbols-outlined text-[14px]">smartphone</span>
-              <span>Private expense tracking for Android</span>
-            </span>
-            <span
-              class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full border border-primary/40 bg-primary-container/15 text-primary font-label-sm text-[10px] tracking-wider uppercase font-bold">
-              ★ Android Closed Testing
-            </span>
-          </div>
-
-          <!-- Main Headline (Single H1) -->
-          <h1
-            class="font-headline-xl text-3xl sm:text-4xl md:text-5xl text-primary font-normal tracking-tight mb-4 text-balance leading-tight">
+<body class="bg-surface text-on-surface font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container vault-guilloche-bg min-h-screen">
+<!-- ========================================================================= -->
+<!-- 1. TOP NAVIGATION BAR                                                    -->
+<!-- ========================================================================= -->
+<header class="fixed top-0 left-0 w-full z-50 border-b border-outline-variant dark:border-outline-variant bg-surface-container-low/95 dark:bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
+<div class="max-w-7xl mx-auto h-16 px-4 md:px-gutter-lg flex items-center justify-between gap-3">
+<!-- Brand Cluster -->
+<div class="flex shrink-0 items-center gap-space-md">
+<a class="font-headline-md text-xl sm:text-headline-md text-primary dark:text-primary-fixed flex items-center gap-space-xs font-semibold tracking-tight active:scale-[0.98] transition-transform duration-150" href="#hero">
+<img alt="1Tap Logo" class="w-8 h-8 rounded-full ring-1 ring-primary/40 object-cover shadow-inner" src="logo.svg">
+<span>1Tap</span>
+</a>
+</div>
+<!-- Navigation Links -->
+<nav class="hidden lg:flex items-center gap-5 font-label-md text-label-md uppercase tracking-wider">
+<a class="text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 active:scale-[0.98]" href="#features">
+          Features
+        </a>
+<a class="text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 active:scale-[0.98]" href="#how-it-works">
+          How It Works
+        </a>
+<a class="text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 active:scale-[0.98]" href="#insights">
+          Insights
+        </a>
+<a class="text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 active:scale-[0.98]" href="#pricing">
+          Pricing
+        </a>
+<a class="text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 active:scale-[0.98]" href="#faq">
+          FAQ
+        </a>
+<a class="text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 active:scale-[0.98] border-l border-outline-variant/50 pl-space-md" href="#architecture">
+          Privacy
+</a>
+</nav>
+<!-- Trailing Actions -->
+<div class="flex min-w-0 items-center gap-2">
+<button type="button" onclick="openContactModal(event)" aria-label="Contact Us" title="Contact Us" class="hidden sm:inline-flex h-10 items-center justify-center gap-2 rounded border border-outline-variant/60 bg-surface-container-low px-3 text-on-surface font-label-md text-label-md font-semibold hover:border-primary/50 hover:bg-surface-container active:scale-[0.98] transition-all">
+<span class="material-symbols-outlined text-primary text-[17px]">mail</span>
+<span>Contact</span>
+</button>
+<button type="button" onclick="handleClosedTestClick(event)" aria-label="Join Closed Test" title="Join Closed Test" class="inline-flex h-10 w-10 sm:w-auto shrink-0 items-center justify-center gap-2 rounded bg-primary-container p-0 sm:px-4 text-on-primary-container font-label-md text-label-md font-semibold hover:brightness-110 active:scale-[0.98] transition-all shadow-[0_0_12px_rgba(217,173,103,0.25)]">
+<span class="material-symbols-outlined text-[17px]">science</span>
+<span class="hidden sm:inline">Join Closed Test</span>
+</button>
+<button id="mobile-menu-btn" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false" class="lg:hidden inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary">
+<span class="material-symbols-outlined text-[24px]">menu</span>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden lg:hidden max-h-[calc(100dvh-4rem)] overflow-y-auto border-t border-outline-variant/50 bg-surface-container-lowest px-4 py-3 shadow-2xl">
+<nav class="grid gap-1 font-label-md text-label-md uppercase tracking-wider">
+<a class="rounded px-2 py-2.5 text-on-surface-variant hover:bg-surface-container hover:text-primary" href="#features">Features</a>
+<a class="rounded px-2 py-2.5 text-on-surface-variant hover:bg-surface-container hover:text-primary" href="#how-it-works">How It Works</a>
+<a class="rounded px-2 py-2.5 text-on-surface-variant hover:bg-surface-container hover:text-primary" href="#insights">Insights</a>
+<a class="rounded px-2 py-2.5 text-on-surface-variant hover:bg-surface-container hover:text-primary" href="#architecture">Privacy</a>
+<a class="rounded px-2 py-2.5 text-on-surface-variant hover:bg-surface-container hover:text-primary" href="#pricing">Pricing</a>
+<a class="rounded px-2 py-2.5 text-on-surface-variant hover:bg-surface-container hover:text-primary" href="#faq">FAQ</a>
+<button type="button" onclick="handleClosedTestClick(event)" class="mt-2 inline-flex items-center justify-center gap-2 rounded bg-primary-container px-4 py-3 text-on-primary-container font-bold"><span class="material-symbols-outlined text-[17px]">science</span>Join Closed Test</button>
+<button type="button" onclick="openContactModal(event)" class="inline-flex items-center justify-center gap-2 rounded border border-outline-variant bg-surface-container px-4 py-3 text-on-surface"><span class="material-symbols-outlined text-primary text-[17px]">mail</span>Contact Us</button>
+</nav>
+</div>
+</header>
+<!-- ========================================================================= -->
+<!-- 2. HERO SECTION                                                           -->
+<!-- ========================================================================= -->
+<section class="relative pt-24 pb-16 md:pt-40 md:pb-28 overflow-hidden" id="hero">
+<div class="max-w-7xl mx-auto px-4 md:px-gutter-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Column: Copy & CTAs (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col items-start">
+<!-- Eyebrow Badge -->
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-secondary/40 bg-secondary-container/20 text-secondary font-label-sm text-label-sm tracking-widest uppercase mb-space-md">
+<span class="material-symbols-outlined text-[14px]" data-icon="shield">shield</span>
+<span>PRIVATE EXPENSE TRACKING FOR ANDROID</span>
+</div>
+<!-- Hero Headline -->
+<h1 class="font-headline-xl text-headline-xl md:font-display-lg md:text-display-lg text-primary tracking-tight mb-space-md text-balance leading-none">
             Track bank transactions from SMS. Categorize in one tap.
           </h1>
-
-          <!-- Supporting Copy -->
-          <p class="font-body-md text-base sm:text-lg text-on-surface-variant max-w-2xl mb-6 leading-relaxed">
-            1Tap turns supported bank-account debit and credit SMS into a private spending ledger on your Android phone. Add cash or other transactions manually, organize your spending, and keep your transaction data on-device.
+<!-- Hero Subheadline -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-space-sm leading-relaxed font-semibold">
+            1Tap turns supported bank-account debit and credit SMS into a private spending ledger on your Android phone.
           </p>
+          <p class="font-body-md text-body-md text-outline max-w-2xl mb-space-lg leading-relaxed">
+            Add cash or other transactions manually, organize your spending, and keep your transaction data on-device without a bank login or cloud account.
+          </p>
+<!-- Primary & Secondary CTA Block -->
+<div class="w-full flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm mb-space-md">
+<!-- Closed Test Button -->
+<button type="button" onclick="handleClosedTestClick(event)" class="inline-flex items-center justify-center gap-3 px-6 py-3.5 rounded bg-primary-container text-on-primary-container font-label-md text-label-md font-semibold shadow-[0_0_20px_rgba(217,173,103,0.35)] hover:shadow-[0_0_28px_rgba(217,173,103,0.5)] active:scale-[0.98] transition-all">
+<span class="material-symbols-outlined text-[20px]">science</span>
+<span class="font-bold">Join the 1Tap Closed Test</span>
+</button>
+<!-- See How It Works Button -->
+<a class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded border border-outline-variant bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md active:scale-[0.98] transition-all" href="#how-it-works">
+<span class="material-symbols-outlined text-primary text-[18px]" data-icon="arrow_downward">arrow_downward</span>
+<span class="">See How It Works</span>
+</a>
+</div>
+<!-- Trust Line Under CTAs -->
+<p class="font-label-sm text-label-sm text-outline tracking-wide">
+            No bank login • No cloud account • Core tracking works offline
+          </p>
+</div>
+<!-- Right Column: Visual Mockup Showcase (5 Cols) -->
+<div class="lg:col-span-5 relative flex justify-center items-center">
+<!-- Medallion Background Glow Ring -->
+<div class="absolute -top-10 -right-10 w-96 h-96 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-10 -left-10 w-80 h-80 rounded-full bg-secondary/10 blur-3xl pointer-events-none"></div>
+<!-- Honest Status Chip: On-Device -->
+<div class="absolute -top-4 left-0 sm:left-4 z-20 max-w-[calc(100%-1rem)] px-3 sm:px-3.5 py-2 rounded-lg border border-outline-variant/80 bg-surface-container-low/95 backdrop-blur-md shadow-2xl flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]" data-icon="smartphone">smartphone</span>
+<span class="font-label-sm text-label-sm text-secondary tracking-wide">PROCESSED ON YOUR PHONE</span>
+</div>
+<!-- Honest Status Chip: No Credentials -->
+<div class="absolute -bottom-4 right-0 sm:right-4 z-20 max-w-[calc(100%-1rem)] px-3 sm:px-3.5 py-2 rounded-lg border border-outline-variant/80 bg-surface-container-low/95 backdrop-blur-md shadow-2xl flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[16px]" data-icon="lock">lock</span>
+<span class="font-label-sm text-label-sm text-primary tracking-wide">NO BANK LOGIN REQUIRED</span>
+</div>
+<!-- Android Handset Container -->
+<div class="relative w-full max-w-[320px] min-w-0 rounded-[36px] p-2.5 bg-gradient-to-b from-surface-variant/80 via-surface-container-lowest to-surface-variant/40 border border-outline-variant/60 vault-phone-frame">
+<!-- Screen Inset -->
+<div class="relative rounded-[28px] overflow-hidden bg-surface-container-lowest ring-1 ring-white/10"><!-- Status Bar & Camera Island -->
+<div class="px-5 pt-3 pb-2 flex items-center justify-between text-[11px] font-mono text-outline/80 bg-surface-container-lowest select-none">
+  <span class="font-semibold text-on-surface text-[10px]">9:41</span>
+  <div class="w-16 h-3.5 bg-surface-container-high rounded-full mx-auto"></div>
+  <div class="flex items-center gap-1.5 text-[10px]">
+    <span class="material-symbols-outlined text-[12px]">wifi</span>
+    <span class="material-symbols-outlined text-[12px]">battery_full</span>
+  </div>
+</div>
 
-          <!-- Primary & Secondary CTA Block -->
-          <div class="w-full sm:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mb-5">
-            <button onclick="handleClosedTestClick(event)"
-              class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded bg-primary-container text-on-primary-container font-label-md text-sm font-bold shadow-[0_0_20px_rgba(217,173,103,0.35)] hover:shadow-[0_0_28px_rgba(217,173,103,0.5)] active:scale-95 transition-all cursor-pointer">
-              <span class="material-symbols-outlined text-[20px]">science</span>
-              <span>Join the 1Tap Closed Test</span>
-            </button>
-            <a class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded border border-outline-variant bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-sm active:scale-95 transition-all"
-              href="#how-it-works">
-              <span class="material-symbols-outlined text-primary text-[18px]">arrow_downward</span>
-              <span>See how it works</span>
-            </a>
-          </div>
-
-          <!-- Privacy Trust Row -->
-          <div
-            class="flex items-center gap-2 font-label-sm text-xs text-outline tracking-wide border-t border-outline-variant/30 pt-3">
-            <span class="material-symbols-outlined text-secondary text-[16px]">verified_user</span>
-            <span>No bank login • No cloud account • Core tracking works offline</span>
-          </div>
-        </div>
-
-        <!-- Right Column: Visual Mockup Showcase (5 Cols) -->
-        <div class="lg:col-span-5 relative flex justify-center items-center">
-          <!-- Background Glow Rings -->
-          <div class="absolute -top-10 -right-10 w-96 h-96 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
-          <div class="absolute -bottom-10 -left-10 w-80 h-80 rounded-full bg-secondary/10 blur-3xl pointer-events-none"></div>
-
-          <!-- Status Chip: On-Device -->
-          <div class="absolute -top-4 left-4 z-20 px-3.5 py-2 rounded-lg border border-outline-variant/80 bg-surface-container-low/95 backdrop-blur-md shadow-2xl flex items-center gap-2">
-            <span class="material-symbols-outlined text-secondary text-[16px]">smartphone</span>
-            <span class="font-label-sm text-xs text-secondary tracking-wide font-medium">PROCESSED ON YOUR PHONE</span>
-          </div>
-
-          <!-- Status Chip: No Credentials -->
-          <div class="absolute -bottom-4 right-4 z-20 px-3.5 py-2 rounded-lg border border-outline-variant/80 bg-surface-container-low/95 backdrop-blur-md shadow-2xl flex items-center gap-2">
-            <span class="material-symbols-outlined text-primary text-[16px]">lock</span>
-            <span class="font-label-sm text-xs text-primary tracking-wide font-medium">NO BANK LOGIN REQUIRED</span>
-          </div>
-
-          <!-- Android Handset Container -->
-          <div class="relative w-[300px] sm:w-[320px] rounded-[36px] p-2.5 bg-gradient-to-b from-surface-variant/80 via-surface-container-lowest to-surface-variant/40 border border-outline-variant/60 vault-phone-frame">
-            <!-- Screen Inset -->
-            <div class="relative rounded-[28px] overflow-hidden bg-surface-container-lowest ring-1 ring-white/10 select-none">
-
-              <!-- Status Bar & Camera Island -->
-              <div class="px-5 pt-3 pb-2 flex items-center justify-between text-[11px] font-mono text-outline/80 bg-surface-container-lowest">
-                <span class="font-semibold text-on-surface text-[10px]">9:41</span>
-                <div class="w-16 h-3.5 bg-surface-container-high rounded-full mx-auto"></div>
-                <div class="flex items-center gap-1.5 text-[10px]">
-                  <span class="material-symbols-outlined text-[12px]">wifi</span>
-                  <span class="material-symbols-outlined text-[12px]">battery_full</span>
-                </div>
-              </div>
-
-              <!-- Top App Bar -->
-              <div class="px-4 py-2 flex items-center justify-between border-b border-outline-variant/30 bg-surface-container-lowest">
-                <div class="flex items-center gap-2">
-                  <img src="logo.svg" alt="1Tap Logo" class="w-6 h-6 rounded-full object-cover shrink-0">
-                  <div>
-                    <div class="text-xs font-semibold text-on-surface leading-tight">1Tap</div>
-                    <div class="text-[9px] font-mono uppercase tracking-widest text-primary">LOCAL VAULT</div>
-                  </div>
-                </div>
-                <div class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary/10 border border-primary/40 text-primary text-[9px] font-mono font-medium shadow-sm">
-                  <span class="material-symbols-outlined text-[11px]">shield</span>
-                  <span>On-Device</span>
-                </div>
-              </div>
-
-              <!-- Phone Screen Body -->
-              <div class="p-3.5 space-y-3 bg-surface text-left relative">
-                <!-- Today's Spending Card -->
-                <div class="p-3 rounded-xl border border-outline-variant/50 bg-surface-container-low shadow-sm">
-                  <div class="text-[10px] font-mono uppercase tracking-wider text-outline mb-0.5">Today's spending</div>
-                  <div class="flex items-baseline justify-between">
-                    <div class="font-headline-md text-[26px] font-bold text-primary tracking-tight">₹506</div>
-                    <span class="text-[10px] font-mono text-secondary">4 items logged</span>
-                  </div>
-                </div>
-
-                <!-- Recent Transactions Section -->
-                <div class="space-y-1.5 pb-2">
-                  <div class="flex items-center justify-between text-[10px] font-mono uppercase tracking-wider text-outline px-1">
-                    <span>Recent</span>
-                    <span class="text-primary cursor-pointer hover:underline">See all</span>
-                  </div>
-
-                  <!-- Item 1: Indian Oil (Bank debit) -->
-                  <div class="p-2 rounded-lg bg-surface-container-lowest border border-outline-variant/30 flex items-center justify-between">
-                    <div class="flex items-center gap-2">
-                      <div class="w-6 h-6 rounded-full bg-surface-container text-primary flex items-center justify-center text-[12px]">
-                        <span class="material-symbols-outlined text-[13px]">local_gas_station</span>
-                      </div>
-                      <div>
-                        <div class="text-[11px] font-semibold text-on-surface leading-tight">Indian Oil</div>
-                        <div class="text-[9px] text-outline">Bike Fuel • Bank debit</div>
-                      </div>
-                    </div>
-                    <div class="font-mono font-semibold text-on-surface text-[11px]">-₹180</div>
-                  </div>
-
-                  <!-- Item 2: Sharma Kirana -->
-                  <div class="p-2 rounded-lg bg-surface-container-lowest border border-outline-variant/30 flex items-center justify-between">
-                    <div class="flex items-center gap-2">
-                      <div class="w-6 h-6 rounded-full bg-surface-container text-primary flex items-center justify-center text-[12px]">
-                        <span class="material-symbols-outlined text-[13px]">shopping_basket</span>
-                      </div>
-                      <div>
-                        <div class="text-[11px] font-semibold text-on-surface leading-tight">Sharma Kirana &amp; General Store</div>
-                        <div class="text-[9px] text-outline">Daily grocery • UPI</div>
-                      </div>
-                    </div>
-                    <div class="font-mono font-semibold text-on-surface text-[11px]">-₹140</div>
-                  </div>
-
-                  <!-- Item 3: Vegetable Market (Manual Cash) -->
-                  <div class="p-2 rounded-lg bg-surface-container-lowest border border-outline-variant/30 flex items-center justify-between">
-                    <div class="flex items-center gap-2">
-                      <div class="w-6 h-6 rounded-full bg-surface-container text-primary flex items-center justify-center text-[12px]">
-                        <span class="material-symbols-outlined text-[13px]">store</span>
-                      </div>
-                      <div>
-                        <div class="text-[11px] font-semibold text-on-surface leading-tight">Vegetable Market (Sabzi Mandi)</div>
-                        <div class="text-[9px] text-outline">Cash entry</div>
-                      </div>
-                    </div>
-                    <div class="font-mono font-semibold text-on-surface text-[11px]">-₹85</div>
-                  </div>
-
-                  <!-- Item 4: Mother Dairy -->
-                  <div class="p-2 rounded-lg bg-surface-container-lowest border border-outline-variant/30 flex items-center justify-between">
-                    <div class="flex items-center gap-2">
-                      <div class="w-6 h-6 rounded-full bg-surface-container text-primary flex items-center justify-center text-[12px]">
-                        <span class="material-symbols-outlined text-[13px]">local_convenience_store</span>
-                      </div>
-                      <div>
-                        <div class="text-[11px] font-semibold text-on-surface leading-tight">Mother Dairy Milk &amp; Dahi</div>
-                        <div class="text-[9px] text-outline">Dairy • UPI</div>
-                      </div>
-                    </div>
-                    <div class="font-mono font-semibold text-on-surface text-[11px]">-₹66</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Bottom Dock Bar with Floating Gold + FAB on Right -->
-              <div class="relative bg-surface-container-lowest border-t border-outline-variant/40 pt-2 pb-3 px-6 select-none">
-                <div class="absolute -top-5 right-4 w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-[0_0_16px_rgba(217,173,103,0.55)] border border-primary font-bold text-lg leading-none cursor-pointer hover:scale-105 transition-transform" title="Add manual cash transaction">
-                  +
-                </div>
-                <div class="flex items-center justify-between text-outline text-[10px] max-w-[200px]">
-                  <div class="flex flex-col items-center gap-0.5 text-primary">
-                    <span class="material-symbols-outlined text-[16px]">home</span>
-                    <span class="font-mono text-[9px] font-semibold">Home</span>
-                  </div>
-                  <div class="flex flex-col items-center gap-0.5 text-outline hover:text-on-surface cursor-pointer">
-                    <span class="material-symbols-outlined text-[16px]">receipt_long</span>
-                    <span class="font-mono text-[9px]">Transactions</span>
-                  </div>
-                  <div class="flex flex-col items-center gap-0.5 text-outline hover:text-on-surface cursor-pointer">
-                    <span class="material-symbols-outlined text-[16px]">settings</span>
-                    <span class="font-mono text-[9px]">Settings</span>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-      </div>
+<!-- Top App Bar -->
+<div class="px-4 py-2 flex items-center justify-between border-b border-outline-variant/30 bg-surface-container-lowest">
+  <div class="flex items-center gap-2">
+    <div class="w-6 h-6 rounded-full bg-primary/20 border border-primary text-primary flex items-center justify-center text-[10px] font-bold font-mono shadow-sm">1</div>
+    <div>
+      <div class="text-xs font-headline-md font-semibold text-on-surface leading-tight">1Tap</div>
+      <div class="text-[9px] font-mono uppercase tracking-widest text-primary">LOCAL VAULT</div>
     </div>
-  </section>
+  </div>
+  <div class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary/10 border border-primary/40 text-primary text-[9px] font-mono font-medium shadow-sm">
+    <span class="material-symbols-outlined text-[11px]">lock</span>
+    <span>On-Device</span>
+  </div>
+</div>
 
-
-  <!-- ========================================================================= -->
-  <!-- 3. HOW IT WORKS (3 SIMPLE STEPS)                                          -->
-  <!-- ========================================================================= -->
-  <section class="py-16 md:py-20 border-t border-outline-variant/40 bg-surface-container-lowest/40" id="how-it-works">
-    <div class="max-w-6xl mx-auto px-4 md:px-6">
-
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <div class="font-label-sm text-xs uppercase tracking-widest text-primary font-bold mb-2">Automated &amp; Instant</div>
-        <h2 class="font-headline-xl text-2xl sm:text-3xl md:text-4xl text-on-surface">
-          Expense tracking without the manual work
-        </h2>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-        <!-- Step 1 -->
-        <div class="numismatic-card p-6 rounded-xl border border-outline-variant/60 bg-surface-container-low/70">
-          <div
-            class="w-9 h-9 rounded-full bg-primary-container/20 border border-primary text-primary flex items-center justify-center font-label-md font-bold text-sm mb-4">
-            1
-          </div>
-          <h3 class="font-headline-md text-xl text-on-surface mb-2 font-semibold">Your bank sends a transaction SMS</h3>
-          <p class="font-body-sm text-sm text-on-surface-variant leading-relaxed">
-            When money enters or leaves your bank account, your bank may send a supported debit or credit SMS alert.
-          </p>
-        </div>
-
-        <!-- Step 2 -->
-        <div class="numismatic-card p-6 rounded-xl border border-outline-variant/60 bg-surface-container-low/70">
-          <div
-            class="w-9 h-9 rounded-full bg-secondary-container/30 border border-secondary text-secondary flex items-center justify-center font-label-md font-bold text-sm mb-4">
-            2
-          </div>
-          <h3 class="font-headline-md text-xl text-on-surface mb-2 font-semibold">1Tap detects it on-device</h3>
-          <p class="font-body-sm text-sm text-on-surface-variant leading-relaxed">
-            1Tap checks supported bank transaction messages locally on your Android phone and identifies eligible transactions.
-          </p>
-        </div>
-
-        <!-- Step 3 -->
-        <div class="numismatic-card p-6 rounded-xl border border-outline-variant/60 bg-surface-container-low/70">
-          <div
-            class="w-9 h-9 rounded-full bg-primary-container/20 border border-primary text-primary flex items-center justify-center font-label-md font-bold text-sm mb-4">
-            3
-          </div>
-          <h3 class="font-headline-md text-xl text-on-surface mb-2 font-semibold">Review or categorize</h3>
-          <p class="font-body-sm text-sm text-on-surface-variant leading-relaxed">
-            Choose a category in one tap. 1Tap can remember merchant-category rules to make future transactions easier to organize.
-          </p>
-        </div>
-
-      </div>
+<!-- Phone Screen Body -->
+<div class="p-3.5 space-y-3 bg-surface text-left select-none relative">
+  <!-- Today's Spending Card -->
+  <div class="p-3 rounded-xl border border-outline-variant/50 bg-surface-container-low shadow-sm">
+    <div class="text-[10px] font-mono uppercase tracking-wider text-outline mb-0.5">Today's spending</div>
+    <div class="flex items-baseline justify-between">
+      <div class="font-headline-md text-[26px] font-bold text-primary tracking-tight">₹506</div>
+      <span class="text-[10px] font-mono text-secondary">4 items logged</span>
     </div>
-  </section>
+  </div>
+
+  <!-- Needs Review Section -->
 
 
-  <!-- ========================================================================= -->
-  <!-- 4. SIGNATURE DIFFERENTIATOR: ONE TAP. DONE. (INTERACTIVE DEMO)            -->
-  <!-- ========================================================================= -->
-  <section class="py-16 md:py-24 border-t border-outline-variant/40 bg-surface-container-low/30" id="differentiator">
-    <div class="max-w-6xl mx-auto px-4 md:px-6">
+  <!-- Recent Transactions Section -->
+  <div class="space-y-1.5 pb-2">
+    <div class="flex items-center justify-between text-[10px] font-mono uppercase tracking-wider text-outline px-1">
+      <span class="">Recent</span>
+      <span class="text-primary cursor-pointer hover:underline">See all</span>
+    </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+    <!-- Item 1: Split bill -->
 
-        <div class="lg:col-span-6 space-y-4">
-          <div class="font-label-sm text-xs uppercase tracking-widest text-primary font-bold">Signature Experience</div>
-          <h2 class="font-headline-xl text-3xl sm:text-4xl text-on-surface leading-tight">
-            A payment happens. One tap. Done.
+
+    <!-- Item 2: Indian Oil (Bike Fuel) -->
+    <div class="p-2 rounded-lg bg-surface-container-lowest border border-outline-variant/30 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="w-6 h-6 rounded-full bg-surface-container text-primary flex items-center justify-center text-[12px]">
+          <span class="material-symbols-outlined text-[13px]">local_gas_station</span>
+        </div>
+        <div>
+          <div class="text-[11px] font-semibold text-on-surface leading-tight">Indian Oil</div>
+          <div class="text-[9px] text-outline">Bike Fuel • Bank debit</div>
+        </div>
+      </div>
+      <div class="font-mono font-semibold text-on-surface text-[11px]">-₹180</div>
+    </div>
+
+    <!-- Item 3: Sharma Kirana & General Store -->
+    <div class="p-2 rounded-lg bg-surface-container-lowest border border-outline-variant/30 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="w-6 h-6 rounded-full bg-surface-container text-primary flex items-center justify-center text-[12px]">
+          <span class="material-symbols-outlined text-[13px]">shopping_basket</span>
+        </div>
+        <div>
+          <div class="text-[11px] font-semibold text-on-surface leading-tight">Sharma Kirana &amp; General Store</div>
+          <div class="text-[9px] text-outline">Daily grocery • UPI</div>
+        </div>
+      </div>
+      <div class="font-mono font-semibold text-on-surface text-[11px]">-₹140</div>
+    </div>
+
+    <!-- Item 4: Vegetable Market (Sabzi Mandi) -->
+    <div class="p-2 rounded-lg bg-surface-container-lowest border border-outline-variant/30 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="w-6 h-6 rounded-full bg-surface-container text-primary flex items-center justify-center text-[12px]">
+          <span class="material-symbols-outlined text-[13px]">store</span>
+        </div>
+        <div>
+          <div class="text-[11px] font-semibold text-on-surface leading-tight">Vegetable Market (Sabzi Mandi)</div>
+          <div class="text-[9px] text-outline">Cash entry</div>
+        </div>
+      </div>
+      <div class="font-mono font-semibold text-on-surface text-[11px]">-₹85</div>
+    </div>
+
+    <!-- Item 5: Mother Dairy Milk & Dahi -->
+    <div class="p-2 rounded-lg bg-surface-container-lowest border border-outline-variant/30 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="w-6 h-6 rounded-full bg-surface-container text-primary flex items-center justify-center text-[12px]">
+          <span class="material-symbols-outlined text-[13px]">local_convenience_store</span>
+        </div>
+        <div>
+          <div class="text-[11px] font-semibold text-on-surface leading-tight">Mother Dairy Milk &amp; Dahi</div>
+          <div class="text-[9px] text-outline">Dairy • UPI</div>
+        </div>
+      </div>
+      <div class="font-mono font-semibold text-on-surface text-[11px]">-₹66</div>
+    </div>
+  </div>
+</div>
+
+<!-- Bottom Dock Bar with Floating Gold + FAB on Right -->
+<div class="relative bg-surface-container-lowest border-t border-outline-variant/40 pt-2 pb-3 px-6 select-none">
+  <!-- Gold FAB placed floating on the right above the bottom nav -->
+  <div class="absolute -top-5 right-4 w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-[0_0_16px_rgba(217,173,103,0.55)] border border-primary font-bold text-lg leading-none cursor-pointer hover:scale-105 transition-transform">
+    +
+  </div>
+  <div class="flex items-center justify-between text-outline text-[10px] max-w-[200px]">
+    <div class="flex flex-col items-center gap-0.5 text-primary">
+      <span class="material-symbols-outlined text-[16px]">home</span>
+      <span class="font-mono text-[9px] font-semibold">Home</span>
+    </div>
+    <div class="flex flex-col items-center gap-0.5 text-outline hover:text-on-surface cursor-pointer">
+      <span class="material-symbols-outlined text-[16px]">receipt_long</span>
+      <span class="font-mono text-[9px]">Transactions</span>
+    </div>
+    <div class="flex flex-col items-center gap-0.5 text-outline hover:text-on-surface cursor-pointer">
+      <span class="material-symbols-outlined text-[16px]">settings</span>
+      <span class="font-mono text-[9px]">Settings</span>
+    </div>
+  </div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 3. MAIN FEATURE SECTION                                                   -->
+<!-- ========================================================================= -->
+<section class="py-space-xl border-t border-outline-variant/40 bg-surface-container-lowest/50" id="features">
+<div class="max-w-7xl mx-auto px-gutter-lg">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl">
+<div>
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-1">
+            Core Capabilities
+          </div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">
+            Everything you need for everyday expense tracking
           </h2>
-          <p class="font-body-md text-base text-on-surface-variant leading-relaxed">
-            Instead of manually entering every expense, 1Tap detects the transaction and lets you categorize it immediately.
-          </p>
-
-          <!-- Category Chip Switcher Demo Instruction -->
-          <div class="pt-2 text-xs font-label-sm uppercase tracking-wider text-outline">
-            <span>Try clicking a category below:</span>
-          </div>
-
-          <!-- Interactive Category Chips -->
-          <div class="flex flex-wrap gap-2 pt-1" id="category-chips">
-            <button data-cat="Food" data-icon="restaurant"
-              class="category-chip active px-3.5 py-1.5 rounded-full border border-outline-variant bg-surface-container text-xs font-semibold flex items-center gap-1.5">
-              <span class="material-symbols-outlined text-[16px]">restaurant</span>
-              <span>Food</span>
-            </button>
-            <button data-cat="Travel" data-icon="directions_car"
-              class="category-chip px-3.5 py-1.5 rounded-full border border-outline-variant bg-surface-container text-xs font-semibold flex items-center gap-1.5 text-on-surface-variant hover:text-primary">
-              <span class="material-symbols-outlined text-[16px]">directions_car</span>
-              <span>Travel</span>
-            </button>
-            <button data-cat="Shopping" data-icon="shopping_bag"
-              class="category-chip px-3.5 py-1.5 rounded-full border border-outline-variant bg-surface-container text-xs font-semibold flex items-center gap-1.5 text-on-surface-variant hover:text-primary">
-              <span class="material-symbols-outlined text-[16px]">shopping_bag</span>
-              <span>Shopping</span>
-            </button>
-            <button data-cat="Bills" data-icon="receipt"
-              class="category-chip px-3.5 py-1.5 rounded-full border border-outline-variant bg-surface-container text-xs font-semibold flex items-center gap-1.5 text-on-surface-variant hover:text-primary">
-              <span class="material-symbols-outlined text-[16px]">receipt</span>
-              <span>Bills</span>
-            </button>
-            <button data-cat="Health" data-icon="medical_services"
-              class="category-chip px-3.5 py-1.5 rounded-full border border-outline-variant bg-surface-container text-xs font-semibold flex items-center gap-1.5 text-on-surface-variant hover:text-primary">
-              <span class="material-symbols-outlined text-[16px]">medical_services</span>
-              <span>Health</span>
-            </button>
-            <button data-cat="Entertainment" data-icon="movie"
-              class="category-chip px-3.5 py-1.5 rounded-full border border-outline-variant bg-surface-container text-xs font-semibold flex items-center gap-1.5 text-on-surface-variant hover:text-primary">
-              <span class="material-symbols-outlined text-[16px]">movie</span>
-              <span>Entertainment</span>
-            </button>
-            <button data-cat="Other" data-icon="more_horiz"
-              class="category-chip px-3.5 py-1.5 rounded-full border border-outline-variant bg-surface-container text-xs font-semibold flex items-center gap-1.5 text-on-surface-variant hover:text-primary">
-              <span class="material-symbols-outlined text-[16px]">more_horiz</span>
-              <span>Other</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Live Interactive Card Preview -->
-        <div class="lg:col-span-6 flex justify-center">
-          <div
-            class="w-full max-w-sm rounded-2xl border border-primary/40 bg-surface-container-low p-5 shadow-2xl backdrop-blur-md relative overflow-hidden">
-            <div class="flex items-center justify-between text-xs text-outline mb-3 font-mono">
-              <span>JUST DETECTED</span>
-              <span class="text-secondary font-semibold">1-TAP READY</span>
-            </div>
-
-            <!-- Transaction Detail (Bank debit established) -->
-            <div class="p-3.5 rounded-xl border border-outline-variant/40 bg-surface-container-lowest mb-4">
-              <div class="flex justify-between items-start mb-1">
-                <span class="font-bold text-on-surface text-base">Swiggy Food Order</span>
-                <span class="font-mono text-primary font-bold text-base">-₹340</span>
-              </div>
-              <div class="text-xs text-outline font-mono">Bank debit · SMS alert</div>
-            </div>
-
-            <!-- Active Selected Category Banner -->
-            <div
-              class="p-3 rounded-lg border border-primary/30 bg-primary-container/15 flex items-center justify-between">
-              <div class="flex items-center gap-2">
-                <span class="material-symbols-outlined text-primary text-[20px]" id="demo-cat-icon">restaurant</span>
-                <span class="text-xs font-label-sm uppercase tracking-wider text-outline">Selected Category:</span>
-              </div>
-              <span class="font-bold text-primary text-sm font-mono" id="demo-cat-name">Food</span>
-            </div>
-
-            <div class="mt-4 text-center">
-              <span class="text-[11px] text-secondary font-mono">✓ Instant 1-Tap Logged to Local Device Storage</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ========================================================================= -->
-  <!-- 5. PRIVACY SECTION (FACTUAL & VERIFIED ON-DEVICE MODEL)                    -->
-  <!-- ========================================================================= -->
-  <section class="py-16 md:py-24 border-t border-outline-variant/40" id="privacy">
-    <div class="max-w-6xl mx-auto px-4 md:px-6">
-
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <div class="font-label-sm text-xs uppercase tracking-widest text-secondary font-bold mb-2">On-Device Security</div>
-        <h2 class="font-headline-xl text-2xl sm:text-3xl md:text-4xl text-on-surface">
-          Your transaction data stays on your device.
-        </h2>
-        <p class="font-body-md text-base text-on-surface-variant mt-3 leading-relaxed">
-          1Tap is designed around on-device expense tracking. Supported transaction SMS processing, categorization, history and analytics run locally on your Android phone.
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-2 md:mt-0">
+          Supported bank messages, fast categorization, searchable history and manual entry in one private Android ledger.
         </p>
-      </div>
-
-      <!-- 4 Clean Factual Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-
-        <div class="p-5 rounded-xl border border-outline-variant/60 bg-surface-container-low/70">
-          <div
-            class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-primary mb-4">
-            <span class="material-symbols-outlined text-[24px]">key_off</span>
-          </div>
-          <h3 class="font-headline-md text-lg text-on-surface mb-1 font-semibold">No bank login</h3>
-          <p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
-            1Tap does not ask for your internet-banking username, password or bank credentials.
-          </p>
-        </div>
-
-        <div class="p-5 rounded-xl border border-outline-variant/60 bg-surface-container-low/70">
-          <div
-            class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-secondary mb-4">
-            <span class="material-symbols-outlined text-[24px]">memory</span>
-          </div>
-          <h3 class="font-headline-md text-lg text-on-surface mb-1 font-semibold">On-device processing</h3>
-          <p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
-            Supported transaction messages are processed directly on your Android device.
-          </p>
-        </div>
-
-        <div class="p-5 rounded-xl border border-outline-variant/60 bg-surface-container-low/70">
-          <div
-            class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-primary mb-4">
-            <span class="material-symbols-outlined text-[24px]">wifi_off</span>
-          </div>
-          <h3 class="font-headline-md text-lg text-on-surface mb-1 font-semibold">Core tracking works offline</h3>
-          <p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
-            Expense tracking, categorization and local history do not depend on a cloud account.
-          </p>
-        </div>
-
-        <div class="p-5 rounded-xl border border-outline-variant/60 bg-surface-container-low/70">
-          <div
-            class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-secondary mb-4">
-            <span class="material-symbols-outlined text-[24px]">folder_special</span>
-          </div>
-          <h3 class="font-headline-md text-lg text-on-surface mb-1 font-semibold">Local transaction history</h3>
-          <p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
-            Your 1Tap transaction history is stored locally on your phone.
-          </p>
-        </div>
-
-      </div>
-
-      <!-- Verified Manifest Network Permission Trust Callout -->
-      <div class="mt-8 max-w-3xl mx-auto p-4 rounded-xl border border-secondary/30 bg-secondary-container/10 flex items-start gap-3">
-        <span class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5">verified</span>
-        <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
-          <strong class="text-on-surface">Verified on Android:</strong> 1Tap does not request Android INTERNET or ACCESS_NETWORK_STATE permissions for its transaction-tracking functionality.
-        </p>
-      </div>
-
-      <div class="mt-8 text-center">
-        <a class="inline-flex items-center gap-2 rounded border border-primary/50 bg-surface-container px-4 py-2.5 font-label-sm text-xs font-semibold uppercase tracking-wider text-primary transition-colors hover:bg-surface-container-high"
-          href="privacy-policy/">
-          <span>Read the full privacy policy</span>
-          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ========================================================================= -->
-  <!-- 6. SMS ACCESS EXPLANATION                                                -->
-  <!-- ========================================================================= -->
-  <section class="py-14 border-t border-outline-variant/40 bg-surface-container-lowest/50" id="sms-explanation">
-    <div class="max-w-4xl mx-auto px-4 md:px-6">
-
-      <div class="rounded-xl border border-outline-variant/60 bg-surface-container-low p-6 md:p-8">
-        <h3 class="font-headline-md text-xl md:text-2xl text-primary mb-3 font-semibold">
-          Why does 1Tap need transaction-message access?
-        </h3>
-        <p class="font-body-sm text-sm text-on-surface-variant mb-5 leading-relaxed">
-          Banks send SMS alerts when money moves in or out of an account. 1Tap uses supported transaction messages to identify eligible bank-account debits and credits automatically, so you don't have to enter every transaction manually.
-        </p>
-
-        <!-- Visual Callouts -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div class="p-3.5 rounded-lg border border-secondary/40 bg-secondary-container/15 flex items-start gap-3">
-            <span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">check_circle</span>
-            <div>
-              <div class="font-label-sm text-xs uppercase tracking-wider text-secondary font-bold">Used for</div>
-              <div class="text-xs text-on-surface">Identifying supported bank-account debit and credit transactions</div>
-            </div>
-          </div>
-
-          <div
-            class="p-3.5 rounded-lg border border-outline-variant/40 bg-surface-container-lowest flex items-start gap-3">
-            <span class="material-symbols-outlined text-outline text-[20px] shrink-0 mt-0.5">cancel</span>
-            <div>
-              <div class="font-label-sm text-xs uppercase tracking-wider text-outline font-bold">Not for</div>
-              <div class="text-xs text-on-surface-variant">Advertising, unrelated message profiling, or selling financial profiles</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ========================================================================= -->
-  <!-- 7. BUILT AROUND INDIAN BANK ACCOUNTS (TWO CLEAR GROUPS)                   -->
-  <!-- ========================================================================= -->
-  <section class="py-16 md:py-20 border-t border-outline-variant/40" id="india-payments">
-    <div class="max-w-6xl mx-auto px-4 md:px-6">
-
-      <div class="text-center max-w-2xl mx-auto mb-10">
-        <div
-          class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-primary/40 bg-primary-container/15 text-primary font-label-sm text-xs uppercase font-bold mb-3">
-          <span>🇮🇳 Built for Indian Banking</span>
-        </div>
-        <h2 class="font-headline-xl text-2xl sm:text-3xl md:text-4xl text-on-surface mb-3">
-          Built around how money moves through Indian bank accounts
-        </h2>
-        <p class="font-body-md text-base text-on-surface-variant leading-relaxed">
-          1Tap focuses on supported SMS messages that confirm money entering or leaving your bank account.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-        <!-- Group 1: Automatically Detected -->
-        <div class="p-6 rounded-xl border border-secondary/40 bg-surface-container-low">
-          <div class="flex items-center gap-2 mb-4">
-            <span class="material-symbols-outlined text-secondary text-[22px]">auto_awesome</span>
-            <h3 class="font-headline-md text-lg text-on-surface font-semibold">Automatically detected when supported</h3>
-          </div>
-          <ul class="space-y-2.5 text-xs sm:text-sm text-on-surface-variant">
-            <li class="flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
-              <span>Bank-account debits</span>
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
-              <span>Bank-account credits</span>
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
-              <span>UPI-linked bank debits</span>
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
-              <span>ATM cash withdrawals</span>
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
-              <span>Bank transfers (NEFT / IMPS / RTGS)</span>
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
-              <span>Salary and income bank credits</span>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Group 2: Add Manually -->
-        <div class="p-6 rounded-xl border border-outline-variant/60 bg-surface-container-low">
-          <div class="flex items-center gap-2 mb-4">
-            <span class="material-symbols-outlined text-primary text-[22px]">edit_note</span>
-            <h3 class="font-headline-md text-lg text-on-surface font-semibold">Add manually when needed</h3>
-          </div>
-          <ul class="space-y-2.5 text-xs sm:text-sm text-on-surface-variant">
-            <li class="flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
-              <span>Cash spending</span>
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
-              <span>Transactions without a supported bank SMS</span>
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
-              <span>Other personal income or expenses</span>
-            </li>
-          </ul>
-          <p class="mt-4 pt-3 border-t border-outline-variant/30 text-[11px] text-outline leading-normal font-mono">
-            Credit-card purchases and merchant notifications that do not prove bank-account cashflow are intentionally not treated as separate automatic expenses to prevent duplicate counting.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ========================================================================= -->
-  <!-- 8. REAL PRODUCT FEATURES (ACCURATELY SIZED)                                -->
-  <!-- ========================================================================= -->
-  <section class="py-16 md:py-24 border-t border-outline-variant/40 bg-surface-container-lowest/40" id="features">
-    <div class="max-w-6xl mx-auto px-4 md:px-6">
-
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <div class="font-label-sm text-xs uppercase tracking-widest text-primary font-bold mb-2">Core Capabilities</div>
-        <h2 class="font-headline-xl text-2xl sm:text-3xl md:text-4xl text-on-surface">
-          Everything you need for everyday expense tracking
-        </h2>
-      </div>
-
-      <!-- Real Product Feature Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-        <!-- Feature 1: Automatic Bank SMS Tracking -->
-        <div class="numismatic-card p-6 rounded-xl border border-outline-variant/60 bg-surface-container-low/70">
-          <div
-            class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-primary mb-4">
-            <span class="material-symbols-outlined text-[24px]">bolt</span>
-          </div>
-          <h3 class="font-headline-md text-lg text-on-surface mb-2 font-semibold">Automatic Bank SMS Tracking</h3>
-          <p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+</div>
+<!-- Bento Grid (4 Columns) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Feature 1 -->
+<div class="numismatic-card p-space-lg rounded-lg border border-outline-variant/60 bg-surface-container-low/70 hover:bg-surface-container-low transition-all">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant mb-space-md text-primary">
+<span class="material-symbols-outlined text-[26px]" data-icon="bolt">bolt</span>
+</div>
+<div class="font-label-sm text-label-sm text-primary uppercase tracking-wider mb-1">Automatic Detection</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Bank SMS Tracking</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
             Supported bank-account debit and credit SMS can become transactions automatically.
           </p>
-        </div>
-
-        <!-- Feature 2: One-Tap Categories & Merchant Memory -->
-        <div class="numismatic-card p-6 rounded-xl border border-outline-variant/60 bg-surface-container-low/70">
-          <div
-            class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-secondary mb-4">
-            <span class="material-symbols-outlined text-[24px]">touch_app</span>
-          </div>
-          <h3 class="font-headline-md text-lg text-on-surface mb-2 font-semibold">One-Tap Categories</h3>
-          <p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
-            Categorize transactions quickly and let 1Tap remember merchant-category rules for future matches.
+</div>
+<!-- Feature 2 -->
+<div class="numismatic-card p-space-lg rounded-lg border border-outline-variant/60 bg-surface-container-low/70 hover:bg-surface-container-low transition-all">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant mb-space-md text-secondary">
+<span class="material-symbols-outlined text-[26px]" data-icon="lock">lock</span>
+</div>
+<div class="font-label-sm text-label-sm text-primary uppercase tracking-wider mb-1">Fast Organization</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">One-Tap Categories</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Categorize quickly and let 1Tap remember merchant-category rules for future matches.
           </p>
-        </div>
-
-        <!-- Feature 3: Searchable Spending History -->
-        <div class="numismatic-card p-6 rounded-xl border border-outline-variant/60 bg-surface-container-low/70">
-          <div
-            class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-primary mb-4">
-            <span class="material-symbols-outlined text-[24px]">search</span>
-          </div>
-          <h3 class="font-headline-md text-lg text-on-surface mb-2 font-semibold">Searchable Spending History</h3>
-          <p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
-            Search and filter transactions by merchant, category, amount, date and money-in/money-out direction.
+</div>
+<!-- Feature 3 -->
+<div class="numismatic-card p-space-lg rounded-lg border border-outline-variant/60 bg-surface-container-low/70 hover:bg-surface-container-low transition-all">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant mb-space-md text-primary">
+<span class="material-symbols-outlined text-[26px]" data-icon="screen_rotation">screen_rotation</span>
+</div>
+<div class="font-label-sm text-label-sm text-primary uppercase tracking-wider mb-1">Full Visibility</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Searchable History</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Search and filter by merchant, category, amount, date and money-in or money-out direction.
           </p>
-        </div>
-
-        <!-- Feature 4: Historical Import -->
-        <div class="numismatic-card p-6 rounded-xl border border-outline-variant/60 bg-surface-container-low/70">
-          <div
-            class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-secondary mb-4">
-            <span class="material-symbols-outlined text-[24px]">history</span>
-          </div>
-          <h3 class="font-headline-md text-lg text-on-surface mb-2 font-semibold">Historical Setup Import</h3>
-          <p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
-            Scan supported past bank transaction SMS during setup or later from Settings.
+</div>
+<!-- Feature 4 -->
+<div class="numismatic-card p-space-lg rounded-lg border border-outline-variant/60 bg-surface-container-low/70 hover:bg-surface-container-low transition-all">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant mb-space-md text-secondary">
+<span class="material-symbols-outlined text-[26px]" data-icon="download">download</span>
+</div>
+<div class="font-label-sm text-label-sm text-primary uppercase tracking-wider mb-1">Complete Ledger</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Manual &amp; Historical Entry</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Add cash or income manually and re-scan supported past bank transaction SMS when needed.
           </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 4. HOW IT WORKS SECTION                                                  -->
+<!-- ========================================================================= -->
+<section class="py-space-xl border-t border-outline-variant/40" id="how-it-works">
+<div class="max-w-7xl mx-auto px-gutter-lg">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-2">
+          Simple &amp; Transparent
         </div>
-
-        <!-- Feature 5: Find Missed Transactions -->
-        <div class="numismatic-card p-6 rounded-xl border border-outline-variant/60 bg-surface-container-low/70">
-          <div
-            class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-primary mb-4">
-            <span class="material-symbols-outlined text-[24px]">find_in_page</span>
-          </div>
-          <h3 class="font-headline-md text-lg text-on-surface mb-2 font-semibold">Find Missed Transactions</h3>
-          <p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
-            Re-scan your inbox for supported bank transactions that may not have been added previously.
-          </p>
-        </div>
-
-        <!-- Feature 6: Manual Transactions -->
-        <div class="numismatic-card p-6 rounded-xl border border-outline-variant/60 bg-surface-container-low/70">
-          <div
-            class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-secondary mb-4">
-            <span class="material-symbols-outlined text-[24px]">edit_square</span>
-          </div>
-          <h3 class="font-headline-md text-lg text-on-surface mb-2 font-semibold">Manual Transactions</h3>
-          <p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
-            Add cash spending, income or other transactions that don't have a supported SMS.
-          </p>
-        </div>
-
-        <!-- Feature 7: Daily Spend Summary (Spanning full on wide if 7th) -->
-        <div class="numismatic-card p-6 rounded-xl border border-outline-variant/60 bg-surface-container-low/70 lg:col-span-3">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-            <div class="flex items-start sm:items-center gap-4">
-              <div
-                class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant text-primary shrink-0">
-                <span class="material-symbols-outlined text-[24px]">notifications_active</span>
-              </div>
-              <div>
-                <h3 class="font-headline-md text-lg text-on-surface font-semibold">Daily Spend Summary</h3>
-                <p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
-                  Get an optional evening summary of today's spending directly on your phone.
-                </p>
-              </div>
-            </div>
-            <div class="font-mono text-xs text-secondary self-start sm:self-auto bg-secondary-container/20 px-3 py-1.5 rounded border border-secondary/30">
-              Optional On-Device Reminder
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ========================================================================= -->
-  <!-- 9. PRICING: FREE VS PRO (ONE-TIME LIFETIME)                                -->
-  <!-- ========================================================================= -->
-  <section class="py-16 md:py-24 border-t border-outline-variant/40 bg-surface-container-lowest/30" id="pricing">
-    <div class="max-w-5xl mx-auto px-4 md:px-6">
-
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <div class="font-label-sm text-xs uppercase tracking-widest text-primary font-bold mb-2">Honest Pricing</div>
-        <h2 class="font-headline-xl text-2xl sm:text-3xl md:text-4xl text-on-surface">
-          Free for everyday tracking. Pro for deeper control.
+<h2 class="font-headline-xl text-headline-xl text-on-surface">
+          How It Works
         </h2>
-        <p class="font-body-md text-base text-on-surface-variant mt-3 leading-relaxed">
-          One-time purchase. No monthly subscription. Your financial ledger belongs to you.
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Three simple steps to effortless expense tracking.
         </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-        <!-- Free Plan -->
-        <div class="rounded-2xl border border-outline-variant/60 bg-surface-container-low p-6 sm:p-8 flex flex-col justify-between">
-          <div>
-            <div class="inline-flex items-center px-2.5 py-0.5 rounded text-[10px] font-mono bg-surface-container text-outline mb-3 font-semibold uppercase tracking-wider">
-              Forever Free
-            </div>
-            <h3 class="font-headline-md text-2xl text-on-surface font-bold mb-1">1Tap Free</h3>
-            <p class="font-body-sm text-xs text-on-surface-variant mb-6">
-              Everything you need for everyday expense tracking.
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg relative">
+<!-- Step 1 -->
+<div class="rounded-xl border border-outline-variant/60 bg-surface-container-low/80 p-space-lg backdrop-blur-md relative">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 border border-primary text-primary flex items-center justify-center font-label-md font-bold mb-space-md">
+            1
+          </div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">A transaction happens</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Your bank sends a transaction SMS.
+          </p>
+</div>
+<!-- Step 2 -->
+<div class="rounded-xl border border-outline-variant/60 bg-surface-container-low/80 p-space-lg backdrop-blur-md relative">
+<div class="w-10 h-10 rounded-full bg-secondary-container/20 border border-secondary text-secondary flex items-center justify-center font-label-md font-bold mb-space-md">
+            2
+          </div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">1Tap reads it locally</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            1Tap identifies supported transaction details on your phone.
+          </p>
+</div>
+<!-- Step 3 -->
+<div class="rounded-xl border border-outline-variant/60 bg-surface-container-low/80 p-space-lg backdrop-blur-md relative">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 border border-primary text-primary flex items-center justify-center font-label-md font-bold mb-space-md">
+            3
+          </div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Review or categorize</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Choose a category in one tap. 1Tap can remember merchant-category rules for future matches.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 5. SPENDING INSIGHTS & HISTORICAL IMPORT                                  -->
+<!-- ========================================================================= -->
+<section class="py-space-xl border-t border-outline-variant/40 bg-surface-container-lowest/40" id="insights">
+<div class="max-w-7xl mx-auto px-gutter-lg space-y-space-xl">
+<!-- Subsection 1: Spend Analytics & Category Intelligence -->
+<div class="rounded-xl border border-outline-variant/60 bg-surface-container-low/80 p-space-lg md:p-space-xl backdrop-blur-md">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-6">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-primary-container/15 border border-primary/30 text-primary font-label-sm text-label-sm uppercase mb-3">
+<span class="material-symbols-outlined text-[14px]" data-icon="insights">insights</span>
+<span class="">Monthly Overview</span>
+</div>
+<h3 class="font-headline-xl text-headline-xl text-primary mb-space-sm">
+              Understand Where Your Money Goes
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              See Money In, Money Out, Net balance, category totals, and spending trends in one simple view.
             </p>
-
-            <ul class="space-y-3 text-xs sm:text-sm text-on-surface-variant">
-              <li class="flex items-start gap-2.5">
-                <span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check</span>
-                <span>Supported bank-SMS transaction detection</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check</span>
-                <span>Full transaction ledger (Money In &amp; Money Out)</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check</span>
-                <span>Search and filter history by category, amount and date</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check</span>
-                <span>Manual cash &amp; custom transaction entry</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check</span>
-                <span>Built-in categories &amp; custom category creation</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check</span>
-                <span>Merchant memory for categorization rules</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check</span>
-                <span>Optional evening spend summary</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="mt-8 pt-6 border-t border-outline-variant/40">
-            <div class="font-headline-md text-2xl font-bold text-on-surface mb-3">₹0</div>
-            <button onclick="handleClosedTestClick(event)"
-              class="w-full inline-flex items-center justify-center py-3 rounded border border-outline-variant bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-xs font-semibold uppercase tracking-wider transition-all cursor-pointer">
-              Get Started with Free
-            </button>
-          </div>
-        </div>
-
-        <!-- Pro Plan -->
-        <div class="rounded-2xl border-2 border-primary/60 bg-surface-container-low p-6 sm:p-8 flex flex-col justify-between relative shadow-[0_0_30px_rgba(217,173,103,0.15)]">
-          <div class="absolute -top-3.5 right-6 inline-flex items-center gap-1 px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-[11px] font-bold uppercase tracking-wider shadow-md">
-            ★ Lifetime Pro
-          </div>
-
-          <div>
-            <div class="inline-flex items-center px-2.5 py-0.5 rounded text-[10px] font-mono bg-primary-container/20 text-primary mb-3 font-semibold uppercase tracking-wider">
-              One-Time Purchase
+<div class="p-3 rounded border border-outline-variant/50 bg-surface-container-lowest text-xs text-outline leading-relaxed">
+<span class="font-semibold text-on-surface">Note:</span> Money Out includes confirmed outgoing transactions, including transfers.
             </div>
-            <h3 class="font-headline-md text-2xl text-primary font-bold mb-1">1Tap Pro — Lifetime</h3>
-            <p class="font-body-sm text-xs text-on-surface-variant mb-6">
-              More control and deeper spending insights.
+</div>
+<!-- Visual Spend Preview -->
+<div class="lg:col-span-6 space-y-4">
+<!-- Net Balance Metrics Card -->
+<div class="p-4 rounded-lg border border-outline-variant/60 bg-surface-container-lowest">
+<div class="text-[11px] font-label-sm uppercase tracking-wider text-outline mb-2">This Month Summary</div>
+<div class="grid grid-cols-3 gap-2 text-center py-2 border-y border-outline-variant/30">
+<div>
+<div class="font-label-sm text-[11px] text-outline">Money In</div>
+<div class="font-label-md text-sm text-secondary font-semibold">₹48,500</div>
+</div>
+<div>
+<div class="font-label-sm text-[11px] text-outline">Money Out</div>
+<div class="font-label-md text-sm text-primary font-semibold">₹25,240</div>
+</div>
+<div>
+<div class="font-label-sm text-[11px] text-outline">Net Balance</div>
+<div class="font-label-md text-sm text-on-surface font-semibold">+₹23,260</div>
+</div>
+</div>
+<!-- Category Breakdown Progress -->
+<div class="mt-4 space-y-3">
+<div>
+<div class="flex justify-between text-xs mb-1">
+<span class="text-on-surface">Food &amp; Groceries</span>
+<span class="font-label-sm text-primary">₹14,280 (56%)</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary-container rounded" style="width: 56%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-xs mb-1">
+<span class="text-on-surface">Transit &amp; Fuel</span>
+<span class="font-label-sm text-secondary">₹6,840 (27%)</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container-high overflow-hidden">
+<div class="h-full bg-secondary rounded" style="width: 27%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-xs mb-1">
+<span class="text-on-surface">Utilities</span>
+<span class="font-label-sm text-tertiary">₹4,120 (17%)</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container-high overflow-hidden">
+<div class="h-full bg-tertiary-container rounded" style="width: 17%;"></div>
+</div>
+</div>
+</div>
+<div class="mt-3 pt-2 border-t border-outline-variant/30 flex justify-between items-center text-[11px] text-outline">
+<span>Pro • 6-Month Trend Overview</span>
+<span class="text-on-surface-variant font-label-sm">Uncategorized entries highlighted</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Subsection 2: Historical Import Section -->
+<div class="rounded-xl border border-outline-variant/60 bg-surface-container-low/80 p-space-lg md:p-space-xl backdrop-blur-md">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-7">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-container/20 border border-secondary/40 text-secondary font-label-sm text-label-sm uppercase mb-3">
+<span class="material-symbols-outlined text-[14px]" data-icon="history">history</span>
+<span class="">Setup Assistant</span>
+</div>
+<h3 class="font-headline-xl text-headline-xl text-on-surface mb-space-sm">
+              Bring Your Recent History With You
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Scan supported past bank transaction SMS during setup or later from Settings to build a more complete history.
             </p>
-
-            <ul class="space-y-3 text-xs sm:text-sm text-on-surface">
-              <li class="flex items-start gap-2.5">
-                <span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">star</span>
-                <span><strong>Full spending analytics</strong> &amp; 6-month historical spending trends</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">star</span>
-                <span><strong>Category breakdowns</strong> &amp; direct analytics drill-down into transactions</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">star</span>
-                <span><strong>Customizable keywords</strong> for built-in categories</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">star</span>
-                <span><strong>Custom auto-categorization matching rules</strong> for unique merchants</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">star</span>
-                <span>Continued parser compatibility updates included with the lifetime Pro purchase</span>
-              </li>
-              <li class="flex items-start gap-2.5 text-on-surface-variant text-xs">
-                <span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check</span>
-                <span>Includes all features in 1Tap Free</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="mt-8 pt-6 border-t border-outline-variant/40">
-            <div class="flex items-baseline gap-2 mb-1">
-              <span class="font-headline-md text-3xl font-bold text-primary">₹399</span>
-              <span class="font-mono text-xs text-outline">one-time lifetime license</span>
+<p class="font-label-sm text-label-sm text-secondary">
+              Note: Your SMS is processed on your phone.
+            </p>
+</div>
+<!-- Supported Scan Duration Pills -->
+<div class="lg:col-span-5 flex flex-col gap-3">
+<div class="text-[11px] font-label-sm uppercase tracking-wider text-outline">Flexible history tools</div>
+<div class="grid grid-cols-2 gap-2.5">
+<div class="px-3.5 py-2.5 rounded border border-outline-variant/60 bg-surface-container-lowest text-center text-on-surface-variant font-label-sm text-xs">
+              Setup import
             </div>
-            <div class="text-[11px] font-mono text-secondary mb-3">No recurring subscriptions or monthly fees</div>
-            <button onclick="handleClosedTestClick(event)"
-              class="w-full inline-flex items-center justify-center py-3 rounded bg-primary-container text-on-primary-container font-label-md text-xs font-bold uppercase tracking-wider hover:brightness-110 active:scale-95 transition-all shadow-[0_0_16px_rgba(217,173,103,0.3)] cursor-pointer">
-              Join Closed Test to Unlock Pro
-            </button>
-          </div>
+<div class="px-3.5 py-2.5 rounded border border-outline-variant/60 bg-surface-container-lowest text-center text-on-surface-variant font-label-sm text-xs">
+              Re-scan later
+            </div>
+<div class="px-3.5 py-2.5 rounded border border-outline-variant/60 bg-surface-container-lowest text-center text-on-surface-variant font-label-sm text-xs">
+              Find missed items
+            </div>
+<div class="px-3.5 py-2.5 rounded border border-primary-container bg-primary-container/15 text-center text-primary font-bold font-label-sm text-xs shadow-sm">
+              Manual entry
+            </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 6. BUILT FOR ANDROID PRIVACY                                              -->
+<!-- ========================================================================= -->
+<section class="py-space-xl border-t border-outline-variant/40" id="architecture">
+<div class="max-w-7xl mx-auto px-gutter-lg">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-2">
+          Technical Transparency
         </div>
-
-      </div>
-
+<h2 class="font-headline-xl text-headline-xl text-on-surface">
+          Your transaction data stays on your device
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Supported transaction-message processing, categorization, history and analytics run locally on your Android phone.
+        </p>
+</div>
+<!-- 4 Technical Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="p-space-lg rounded-xl border border-outline-variant/60 bg-surface-container-low">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-primary text-[24px]" data-icon="database">database</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Local transaction history</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Your 1Tap transaction history is stored locally on your phone.
+          </p>
+</div>
+<div class="p-space-lg rounded-xl border border-outline-variant/60 bg-surface-container-low">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-secondary text-[24px]" data-icon="memory">memory</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">On-device processing</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Supported transaction messages are processed directly on your Android device.
+          </p>
+</div>
+<div class="p-space-lg rounded-xl border border-outline-variant/60 bg-surface-container-low">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-secondary text-[24px]" data-icon="wifi_off">wifi_off</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Core tracking works offline</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Expense tracking, categorization and local history do not depend on a cloud account.
+          </p>
+</div>
+<div class="p-space-lg rounded-xl border border-outline-variant/60 bg-surface-container-low">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-primary text-[24px]" data-icon="edit_note">edit_note</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">No bank login</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            1Tap does not ask for your internet-banking username, password or bank credentials.
+          </p>
+</div>
     </div>
-  </section>
-
-
-  <!-- ========================================================================= -->
-  <!-- 10. COMPANY TRUST & ANDROID CLOSED TESTING NOTE                           -->
-  <!-- ========================================================================= -->
-  <section class="py-14 border-t border-outline-variant/40 bg-surface-container-low/30" id="trust-zerofrik">
-    <div class="max-w-4xl mx-auto px-4 md:px-6 text-center">
-
-      <h3 class="font-headline-md text-xl text-primary font-semibold mb-2">Built by ZeroFrik</h3>
-      <p class="font-body-sm text-sm text-on-surface-variant max-w-xl mx-auto mb-4 leading-relaxed">
-        1Tap is an on-device personal finance product from ZeroFrik, built to make everyday expense tracking faster and more private.
-      </p>
-
-      <div
-        class="inline-block p-4 rounded-xl border border-outline-variant/50 bg-surface-container-lowest max-w-xl text-xs text-outline leading-relaxed font-mono">
-        <span class="font-bold text-primary">Currently in Android Closed Testing:</span> We're testing transaction detection, categorization and bank compatibility with real users before the public release.
-      </div>
-
+    <div class="mt-space-lg text-center">
+      <a class="inline-flex items-center gap-1.5 font-label-md text-label-md uppercase tracking-wider text-primary hover:text-secondary transition-colors" href="/privacy-policy/">
+        <span>Read our full Privacy Policy</span>
+        <span class="material-symbols-outlined text-[17px]">arrow_forward</span>
+      </a>
     </div>
-  </section>
-
-
-  <!-- ========================================================================= -->
-  <!-- 11. FREQUENTLY ASKED QUESTIONS (ACCORDION)                                -->
-  <!-- ========================================================================= -->
-  <section class="py-16 md:py-24 border-t border-outline-variant/40 bg-surface-container-lowest/40" id="faq">
-    <div class="max-w-3xl mx-auto px-4 md:px-6">
-
-      <div class="text-center mb-10">
-        <div class="font-label-sm text-xs uppercase tracking-widest text-primary font-bold mb-1">Clear Answers</div>
-        <h2 class="font-headline-xl text-2xl sm:text-3xl text-on-surface">Frequently Asked Questions</h2>
-      </div>
-
-      <div class="space-y-3" id="faq-accordion">
-
-        <!-- Q1 -->
-        <div class="rounded-xl border border-outline-variant/60 bg-surface-container-low overflow-hidden">
-          <button
-            class="w-full p-4 text-left font-semibold text-on-surface flex justify-between items-center text-sm md:text-base focus:outline-none faq-btn cursor-pointer">
-            <span>How does 1Tap track expenses?</span>
-            <span class="material-symbols-outlined text-primary text-[20px] transition-transform">expand_more</span>
-          </button>
-          <div class="px-4 pb-4 text-xs md:text-sm text-on-surface-variant hidden faq-content leading-relaxed">
-            1Tap checks supported bank transaction SMS on your Android phone. When a message clearly confirms money entering or leaving a bank account, 1Tap can turn it into a transaction for you to review and categorize.
-          </div>
+  </div>
+</section>
+<!-- ========================================================================= -->
+<!-- 7. WHY ONETAP IS DIFFERENT (COMPARISON TABLE)                             -->
+<!-- ========================================================================= -->
+<section class="py-space-xl border-t border-outline-variant/40 bg-surface-container-lowest/30" id="why-onetap">
+<div class="max-w-5xl mx-auto px-gutter-lg">
+<div class="text-center max-w-3xl mx-auto mb-space-xl">
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-2">
+          Product Transparency
         </div>
-
-        <!-- Q2 -->
-        <div class="rounded-xl border border-outline-variant/60 bg-surface-container-low overflow-hidden">
-          <button
-            class="w-full p-4 text-left font-semibold text-on-surface flex justify-between items-center text-sm md:text-base focus:outline-none faq-btn cursor-pointer">
-            <span>Does 1Tap require my bank login?</span>
-            <span class="material-symbols-outlined text-primary text-[20px] transition-transform">expand_more</span>
-          </button>
-          <div class="px-4 pb-4 text-xs md:text-sm text-on-surface-variant hidden faq-content leading-relaxed">
-            No. 1Tap does not ask for your bank username, password or internet-banking credentials.
-          </div>
-        </div>
-
-        <!-- Q3 -->
-        <div class="rounded-xl border border-outline-variant/60 bg-surface-container-low overflow-hidden">
-          <button
-            class="w-full p-4 text-left font-semibold text-on-surface flex justify-between items-center text-sm md:text-base focus:outline-none faq-btn cursor-pointer">
-            <span>Why does 1Tap need transaction-message access?</span>
-            <span class="material-symbols-outlined text-primary text-[20px] transition-transform">expand_more</span>
-          </button>
-          <div class="px-4 pb-4 text-xs md:text-sm text-on-surface-variant hidden faq-content leading-relaxed">
-            It uses supported bank transaction SMS to identify eligible bank-account debits and credits locally on your phone.
-          </div>
-        </div>
-
-        <!-- Q4 -->
-        <div class="rounded-xl border border-outline-variant/60 bg-surface-container-low overflow-hidden">
-          <button
-            class="w-full p-4 text-left font-semibold text-on-surface flex justify-between items-center text-sm md:text-base focus:outline-none faq-btn cursor-pointer">
-            <span>Does 1Tap work offline?</span>
-            <span class="material-symbols-outlined text-primary text-[20px] transition-transform">expand_more</span>
-          </button>
-          <div class="px-4 pb-4 text-xs md:text-sm text-on-surface-variant hidden faq-content leading-relaxed">
-            Core expense tracking, categorization, analytics and local history do not depend on a cloud account or server connection.
-          </div>
-        </div>
-
-        <!-- Q5 -->
-        <div class="rounded-xl border border-outline-variant/60 bg-surface-container-low overflow-hidden">
-          <button
-            class="w-full p-4 text-left font-semibold text-on-surface flex justify-between items-center text-sm md:text-base focus:outline-none faq-btn cursor-pointer">
-            <span>Where is my transaction data stored?</span>
-            <span class="material-symbols-outlined text-primary text-[20px] transition-transform">expand_more</span>
-          </button>
-          <div class="px-4 pb-4 text-xs md:text-sm text-on-surface-variant hidden faq-content leading-relaxed">
-            Your 1Tap transaction history is stored locally on your Android device.
-          </div>
-        </div>
-
-        <!-- Q6 -->
-        <div class="rounded-xl border border-outline-variant/60 bg-surface-container-low overflow-hidden">
-          <button
-            class="w-full p-4 text-left font-semibold text-on-surface flex justify-between items-center text-sm md:text-base focus:outline-none faq-btn cursor-pointer">
-            <span>Which transactions can 1Tap detect automatically?</span>
-            <span class="material-symbols-outlined text-primary text-[20px] transition-transform">expand_more</span>
-          </button>
-          <div class="px-4 pb-4 text-xs md:text-sm text-on-surface-variant hidden faq-content leading-relaxed">
-            1Tap focuses on supported SMS messages that clearly show money entering or leaving a bank account, including supported bank debits, credits, UPI-linked bank debits, ATM withdrawals and bank transfers. Credit-card purchase messages or merchant confirmations that do not prove bank-account movement are not treated as separate automatic transactions.
-          </div>
-        </div>
-
-        <!-- Q7 -->
-        <div class="rounded-xl border border-outline-variant/60 bg-surface-container-low overflow-hidden">
-          <button
-            class="w-full p-4 text-left font-semibold text-on-surface flex justify-between items-center text-sm md:text-base focus:outline-none faq-btn cursor-pointer">
-            <span>What about cash expenses?</span>
-            <span class="material-symbols-outlined text-primary text-[20px] transition-transform">expand_more</span>
-          </button>
-          <div class="px-4 pb-4 text-xs md:text-sm text-on-surface-variant hidden faq-content leading-relaxed">
-            You can add cash expenses, income and other transactions manually in 1Tap.
-          </div>
-        </div>
-
-        <!-- Q8 -->
-        <div class="rounded-xl border border-outline-variant/60 bg-surface-container-low overflow-hidden">
-          <button
-            class="w-full p-4 text-left font-semibold text-on-surface flex justify-between items-center text-sm md:text-base focus:outline-none faq-btn cursor-pointer">
-            <span>What happens with transfers and refunds?</span>
-            <span class="material-symbols-outlined text-primary text-[20px] transition-transform">expand_more</span>
-          </button>
-          <div class="px-4 pb-4 text-xs md:text-sm text-on-surface-variant hidden faq-content leading-relaxed">
-            Currently, confirmed outgoing transfers are logged under your ledger. Transfer-specific classification and refund reconciliation are actively being refined in closed testing.
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ========================================================================= -->
-  <!-- 12. FINAL CONVERSION CTA BANNER                                           -->
-  <!-- ========================================================================= -->
-  <section class="py-16 md:py-24 border-t border-outline-variant/40 relative overflow-hidden" id="download">
-    <div class="max-w-4xl mx-auto px-4 md:px-6 relative">
-      <div
-        class="rounded-2xl border border-primary/30 bg-surface-container-low p-8 md:p-12 text-center shadow-2xl backdrop-blur-lg">
-
-        <div class="inline-flex items-center gap-1 px-3 py-1 rounded-full border border-primary/40 bg-primary-container/15 text-primary font-label-sm text-xs uppercase font-bold mb-4">
-          ★ Android Closed Testing
-        </div>
-
-        <h2 class="font-headline-xl text-3xl sm:text-4xl text-primary mb-3">
+<h2 class="font-headline-xl text-headline-xl text-on-surface">
+          Why 1Tap Is Different
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          A transparent look at how 1Tap handles your personal finances.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md mb-space-lg">
+<div class="rounded-xl border border-secondary/40 bg-surface-container-low p-space-lg">
+<div class="flex items-center gap-2 mb-3"><span class="material-symbols-outlined text-secondary">auto_awesome</span><h3 class="font-headline-md text-xl text-on-surface">Automatically detected when supported</h3></div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Bank-account debits and credits, UPI-linked bank debits, ATM withdrawals, bank transfers, salary and income bank credits.</p>
+</div>
+<div class="rounded-xl border border-outline-variant/60 bg-surface-container-low p-space-lg">
+<div class="flex items-center gap-2 mb-3"><span class="material-symbols-outlined text-primary">edit_note</span><h3 class="font-headline-md text-xl text-on-surface">Add manually when needed</h3></div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Cash spending, unsupported messages and other personal income or expenses. Merchant notifications that do not prove bank-account cashflow are not counted automatically.</p>
+</div>
+</div>
+<div class="overflow-x-auto rounded-lg border border-outline-variant/70 shadow-2xl">
+<table class="w-full text-left border-collapse bg-surface-container-low">
+<thead>
+<tr class="border-b border-outline-variant bg-surface-container text-left font-label-md text-label-md uppercase tracking-wider">
+<th class="py-4 px-6 text-on-surface">Feature / Behavior</th>
+<th class="py-4 px-6 text-primary text-center">1Tap</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/30 font-body-sm text-body-sm">
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-3.5 px-6 font-semibold text-on-surface">Automatic SMS tracking</td>
+<td class="py-3.5 px-6 text-center font-semibold text-secondary font-mono">Yes</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-3.5 px-6 font-semibold text-on-surface">Bank login required</td>
+<td class="py-3.5 px-6 text-center font-semibold text-secondary font-mono">No</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-3.5 px-6 font-semibold text-on-surface">Cloud account required</td>
+<td class="py-3.5 px-6 text-center font-semibold text-secondary font-mono">No</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-3.5 px-6 font-semibold text-on-surface">Manual transaction entry</td>
+<td class="py-3.5 px-6 text-center font-semibold text-secondary font-mono">Yes</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-3.5 px-6 font-semibold text-on-surface">Historical SMS import</td>
+<td class="py-3.5 px-6 text-center font-semibold text-secondary font-mono">Yes</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-3.5 px-6 font-semibold text-on-surface">Merchant/category correction</td>
+<td class="py-3.5 px-6 text-center font-semibold text-secondary font-mono">Yes</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-3.5 px-6 font-semibold text-on-surface">Spending insights</td>
+<td class="py-3.5 px-6 text-center font-semibold text-secondary font-mono">Yes</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-3.5 px-6 font-semibold text-on-surface">Local transaction storage</td>
+<td class="py-3.5 px-6 text-center font-semibold text-secondary font-mono">Yes</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 8. PRICING                                                                -->
+<!-- ========================================================================= -->
+<section class="py-space-xl border-t border-outline-variant/40 bg-surface-container-lowest/40" id="pricing">
+<div class="max-w-5xl mx-auto px-gutter-lg">
+<div class="text-center max-w-3xl mx-auto mb-space-xl">
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-2">Honest Pricing</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">Free for everyday tracking. Pro for deeper control.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">One-time purchase. No monthly subscription. Your financial ledger belongs to you.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<article class="rounded-2xl border border-outline-variant/60 bg-surface-container-low p-space-lg md:p-space-xl flex flex-col justify-between">
+<div>
+<div class="inline-flex items-center px-2.5 py-1 rounded bg-surface-container text-outline mb-3 font-label-sm text-label-sm uppercase tracking-wider">Forever Free</div>
+<h3 class="font-headline-md text-2xl text-on-surface font-bold mb-1">1Tap Free</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg">Everything you need for everyday expense tracking.</p>
+<ul class="space-y-3 text-sm text-on-surface-variant">
+<li class="flex items-start gap-2.5"><span class="material-symbols-outlined text-secondary text-[18px] shrink-0">check</span><span>Supported bank-SMS transaction detection</span></li>
+<li class="flex items-start gap-2.5"><span class="material-symbols-outlined text-secondary text-[18px] shrink-0">check</span><span>Full money-in and money-out ledger</span></li>
+<li class="flex items-start gap-2.5"><span class="material-symbols-outlined text-secondary text-[18px] shrink-0">check</span><span>Search and filter history</span></li>
+<li class="flex items-start gap-2.5"><span class="material-symbols-outlined text-secondary text-[18px] shrink-0">check</span><span>Manual cash and custom transactions</span></li>
+<li class="flex items-start gap-2.5"><span class="material-symbols-outlined text-secondary text-[18px] shrink-0">check</span><span>Categories and merchant memory</span></li>
+<li class="flex items-start gap-2.5"><span class="material-symbols-outlined text-secondary text-[18px] shrink-0">check</span><span>Optional evening spend summary</span></li>
+</ul>
+</div>
+<div class="mt-space-xl pt-space-lg border-t border-outline-variant/40">
+<div class="font-headline-md text-3xl font-bold text-on-surface mb-3">₹0</div>
+<button type="button" onclick="handleClosedTestClick(event)" class="w-full inline-flex items-center justify-center py-3 rounded border border-outline-variant bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold uppercase tracking-wider transition-all">Get Started with Free</button>
+</div>
+</article>
+<article class="rounded-2xl border-2 border-primary/60 bg-surface-container-low p-space-lg md:p-space-xl flex flex-col justify-between relative shadow-[0_0_30px_rgba(217,173,103,0.15)]">
+<div class="absolute -top-3 right-4 sm:right-6 inline-flex items-center gap-1 px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold uppercase tracking-wider shadow-md">★ Lifetime Pro</div>
+<div>
+<div class="inline-flex items-center px-2.5 py-1 rounded bg-primary-container/20 text-primary mb-3 font-label-sm text-label-sm uppercase tracking-wider">One-Time Purchase</div>
+<h3 class="font-headline-md text-2xl text-primary font-bold mb-1">1Tap Pro — Lifetime</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg">More control and deeper spending insights.</p>
+<ul class="space-y-3 text-sm text-on-surface">
+<li class="flex items-start gap-2.5"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">star</span><span><strong>Full spending analytics</strong> and 6-month trends</span></li>
+<li class="flex items-start gap-2.5"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">star</span><span><strong>Category breakdowns</strong> with transaction drill-down</span></li>
+<li class="flex items-start gap-2.5"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">star</span><span><strong>Customizable keywords</strong> and matching rules</span></li>
+<li class="flex items-start gap-2.5"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">star</span><span>Continued parser compatibility updates</span></li>
+<li class="flex items-start gap-2.5 text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-[18px] shrink-0">check</span><span>Everything included in 1Tap Free</span></li>
+</ul>
+</div>
+<div class="mt-space-xl pt-space-lg border-t border-outline-variant/40">
+<div class="flex flex-wrap items-baseline gap-x-2 gap-y-1 mb-1"><span class="font-headline-md text-3xl font-bold text-primary">₹399</span><span class="font-label-sm text-label-sm text-outline">one-time lifetime license</span></div>
+<div class="text-xs font-mono text-secondary mb-3">No recurring subscription or monthly fee</div>
+<button type="button" onclick="handleClosedTestClick(event)" class="w-full inline-flex items-center justify-center py-3 rounded bg-primary-container text-on-primary-container font-label-md text-label-md font-bold uppercase tracking-wider hover:brightness-110 active:scale-[0.98] transition-all">Join Closed Test to Unlock Pro</button>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 9. CONVERSION CALL TO ACTION BANNER                                       -->
+<!-- ========================================================================= -->
+<section class="py-space-xl border-t border-outline-variant/40 relative overflow-hidden" id="download">
+<!-- Ambient Glow Background -->
+<div class="absolute inset-0 bg-gradient-to-b from-primary-container/5 via-transparent to-transparent pointer-events-none"></div>
+<div class="max-w-5xl mx-auto px-gutter-lg relative">
+<div class="rounded-2xl border border-primary/30 bg-surface-container-low/90 p-space-xl text-center shadow-2xl backdrop-blur-lg">
+<!-- Center Emblem -->
+<div class="flex justify-center mb-space-md">
+<img alt="1Tap Logo" class="w-16 h-16 rounded-full ring-2 ring-primary shadow-[0_0_24px_rgba(217,173,103,0.4)] object-cover" src="logo.svg">
+</div>
+<h2 class="font-headline-xl text-headline-xl text-primary mb-space-sm">
           Stop entering every expense manually.
         </h2>
-        <p class="font-body-lg text-base sm:text-lg text-on-surface-variant max-w-xl mx-auto mb-6 leading-relaxed">
-          Let 1Tap detect the bank transaction on your device. You choose the category in one tap.
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto mb-space-lg">
+          Let 1Tap detect the supported bank transaction on your device. You choose the category in one tap.
         </p>
-
-        <!-- CTA Button -->
-        <div class="flex items-center justify-center">
-          <button onclick="handleClosedTestClick(event)"
-            class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded bg-primary-container text-on-primary-container font-label-md text-sm font-bold shadow-[0_0_24px_rgba(217,173,103,0.35)] hover:shadow-[0_0_36px_rgba(217,173,103,0.55)] active:scale-95 transition-all cursor-pointer">
-            <span class="material-symbols-outlined text-[20px]">science</span>
-            <span>Join the 1Tap Closed Test</span>
-          </button>
-        </div>
-
-        <!-- Trust Line -->
-        <div class="mt-4 text-center">
-          <span class="font-label-sm text-xs text-outline">
+<!-- CTA Button -->
+<div class="flex items-center justify-center">
+<button type="button" onclick="handleClosedTestClick(event)" class="inline-flex w-full sm:w-auto items-center justify-center gap-3 px-4 sm:px-8 py-4 rounded bg-primary-container text-on-primary-container font-label-md text-label-md font-bold shadow-[0_0_24px_rgba(217,173,103,0.35)] hover:shadow-[0_0_36px_rgba(217,173,103,0.55)] active:scale-[0.98] transition-all">
+<span class="material-symbols-outlined text-[20px]">science</span>
+<span>Join the 1Tap Closed Test</span>
+</button>
+</div>
+<!-- Trust Line -->
+<div class="mt-space-md text-center">
+<span class="font-label-sm text-label-sm text-outline">
             Android only • No bank login • Core tracking works offline
           </span>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 9. FREQUENTLY ASKED QUESTIONS                                             -->
+<!-- ========================================================================= -->
+<section class="py-space-xl border-t border-outline-variant/40 bg-surface-container-lowest/40" id="faq">
+<div class="max-w-4xl mx-auto px-gutter-lg">
+<div class="text-center mb-space-lg">
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-1">
+          Common Questions
         </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ========================================================================= -->
-  <!-- 13. FOOTER                                                                -->
-  <!-- ========================================================================= -->
-  <footer class="w-full border-t border-outline-variant/40 bg-surface-container-lowest py-8 px-4 md:px-6">
-    <div
-      class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-on-surface-variant">
-
-      <div class="flex items-center gap-2 font-headline-md text-primary font-bold text-base">
-        <img src="logo.svg" alt="1Tap Logo" class="w-6 h-6 rounded-full object-cover shrink-0">
-        <span>1Tap by ZeroFrik</span>
-      </div>
-
-      <div>
-        © 2026 ZeroFrik. Private Android expense tracking built around on-device transaction processing.
-      </div>
-
-      <nav class="flex items-center gap-4 font-label-sm text-[11px] uppercase tracking-wider text-outline">
-        <a class="hover:text-primary transition-colors" href="privacy-policy/">Privacy</a>
-        <span>•</span>
-        <a class="hover:text-primary transition-colors" href="#features">Features</a>
-        <span>•</span>
-        <a class="hover:text-primary transition-colors" href="#pricing">Pricing</a>
-        <span>•</span>
-        <a class="hover:text-primary transition-colors" href="#faq">FAQ</a>
-        <span>•</span>
-        <a class="hover:text-primary transition-colors" href="https://zerofrik.com/" target="_blank" rel="noopener noreferrer">ZeroFrik</a>
-        <span>•</span>
-        <a class="hover:text-primary transition-colors cursor-pointer" href="#" onclick="openContactModal(event)">Contact</a>
-      </nav>
-
-    </div>
-  </footer>
-
-  <!-- ========================================================================= -->
-  <!-- CONTACT MODAL                                                             -->
-  <!-- ========================================================================= -->
-  <div id="contact-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 sm:p-6" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-    <!-- Backdrop -->
-    <div class="fixed inset-0 bg-[#0c0e12]/80 backdrop-blur-md transition-opacity" aria-hidden="true" onclick="closeContactModal()"></div>
-    
-    <!-- Modal Dialog -->
-    <div class="relative bg-surface-container-low rounded-2xl shadow-2xl w-full max-w-md overflow-hidden border border-outline-variant/60 transform transition-all text-on-surface">
-      <div class="px-6 py-5 border-b border-outline-variant/40 flex items-center justify-between bg-surface-container-lowest">
-        <div class="flex items-center gap-2">
-          <span class="material-symbols-outlined text-primary text-[20px]">mail</span>
-          <h3 class="text-base font-headline-md font-bold text-on-surface" id="modal-title">Contact 1Tap Team</h3>
-        </div>
-        <button type="button" class="text-outline hover:text-on-surface transition-colors rounded-full p-1 hover:bg-surface-container-high focus:outline-none" onclick="closeContactModal()">
-          <span class="material-symbols-outlined text-xl" aria-hidden="true">close</span>
-        </button>
-      </div>
-      
-      <form id="contact-form" class="px-6 py-6 space-y-4">
-        <div>
-          <label for="contact-email" class="block text-xs font-mono font-medium text-on-surface-variant mb-1.5 uppercase tracking-wider">Email Address</label>
-          <input type="email" id="contact-email" name="email" required class="block w-full rounded-lg border border-outline-variant/60 bg-surface-container-lowest px-3.5 py-2.5 text-sm text-on-surface placeholder-outline/60 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="you@example.com">
-        </div>
-        <div>
-          <label for="contact-body" class="block text-xs font-mono font-medium text-on-surface-variant mb-1.5 uppercase tracking-wider">Message / Inquiry</label>
-          <textarea id="contact-body" name="message" rows="4" required class="block w-full rounded-lg border border-outline-variant/60 bg-surface-container-lowest px-3.5 py-2.5 text-sm text-on-surface placeholder-outline/60 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="How can we help you?"></textarea>
-        </div>
-        <div class="pt-2">
-          <button type="submit" id="contact-submit" class="w-full inline-flex items-center justify-center h-11 px-4 text-xs font-mono uppercase tracking-wider font-bold bg-primary-container text-on-primary-container hover:brightness-110 active:scale-95 transition-all rounded-lg shadow-[0_0_16px_rgba(217,173,103,0.3)] cursor-pointer">
-            Send Message
-          </button>
-        </div>
-        <div id="contact-status" class="hidden text-xs text-center font-mono mt-2 py-2 rounded-lg"></div>
-      </form>
-    </div>
-  </div>
-
-  <!-- ========================================================================= -->
-  <!-- CLOSED TEST AWAITING CONFIGURATION MODAL                                  -->
-  <!-- ========================================================================= -->
-  <div id="closed-test-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 sm:p-6" aria-labelledby="closed-test-title" role="dialog" aria-modal="true">
-    <div class="fixed inset-0 bg-[#0c0e12]/80 backdrop-blur-md transition-opacity" aria-hidden="true" onclick="closeClosedTestModal()"></div>
-    <div class="relative bg-surface-container-low rounded-2xl shadow-2xl w-full max-w-md overflow-hidden border border-outline-variant/60 transform transition-all text-on-surface">
-      <div class="px-6 py-5 border-b border-outline-variant/40 flex items-center justify-between bg-surface-container-lowest">
-        <div class="flex items-center gap-2">
-          <span class="material-symbols-outlined text-primary text-[20px]">science</span>
-          <h3 class="text-base font-headline-md font-bold text-on-surface" id="closed-test-title">1Tap Closed Testing</h3>
-        </div>
-        <button type="button" class="text-outline hover:text-on-surface transition-colors rounded-full p-1 hover:bg-surface-container-high focus:outline-none" onclick="closeClosedTestModal()">
-          <span class="material-symbols-outlined text-xl" aria-hidden="true">close</span>
-        </button>
-      </div>
-      <div class="p-6 space-y-4">
-        <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
-          1Tap is currently undergoing closed testing on Google Play. Testing invitations and opt-in links are managed directly by ZeroFrik.
+<h2 class="font-headline-xl text-headline-xl text-on-surface">
+          Frequently Asked Questions
+        </h2>
+</div>
+<div class="space-y-space-sm">
+<div class="p-space-md rounded-lg border border-outline-variant/60 bg-surface-container-low">
+<h4 class="font-headline-md text-headline-md text-primary text-base font-semibold mb-1">
+            Does 1Tap need my bank login?
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            No. 1Tap does not ask for your bank username, password or internet-banking credentials.
+          </p>
+</div>
+<div class="p-space-md rounded-lg border border-outline-variant/60 bg-surface-container-low">
+<h4 class="font-headline-md text-headline-md text-primary text-base font-semibold mb-1">
+            How does automatic tracking work?
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            1Tap checks supported bank transaction SMS on your Android phone and extracts eligible transaction details locally.
+          </p>
+</div>
+<div class="p-space-md rounded-lg border border-outline-variant/60 bg-surface-container-low">
+<h4 class="font-headline-md text-headline-md text-primary text-base font-semibold mb-1">
+            Is my financial data uploaded?
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            1Tap stores your transaction history locally on your device and does not require a cloud account.
+          </p>
+</div>
+<div class="p-space-md rounded-lg border border-outline-variant/60 bg-surface-container-low">
+<h4 class="font-headline-md text-headline-md text-primary text-base font-semibold mb-1">
+            Why does 1Tap need transaction-message access?
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            It uses supported bank transaction SMS to identify eligible bank-account debits and credits locally on your phone. Manual entry remains available.
+          </p>
+</div>
+<div class="p-space-md rounded-lg border border-outline-variant/60 bg-surface-container-low">
+<h4 class="font-headline-md text-headline-md text-primary text-base font-semibold mb-1">
+            Can I edit a transaction?
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Yes. You can edit transaction details and categories. 1Tap can remember eligible corrections for future matching transactions.
+          </p>
+</div>
+<div class="p-space-md rounded-lg border border-outline-variant/60 bg-surface-container-low">
+<h4 class="font-headline-md text-headline-md text-primary text-base font-semibold mb-1">
+            Does 1Tap identify every merchant?
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Merchant identification depends on the information available in the transaction message. When a merchant is unavailable or uncertain, you can correct the transaction manually.
+          </p>
+</div>
+<div class="p-space-md rounded-lg border border-outline-variant/60 bg-surface-container-low">
+<h4 class="font-headline-md text-headline-md text-primary text-base font-semibold mb-1">
+            Will transfers be counted as spending?
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Money Out currently includes confirmed outgoing transactions, including transfers. Transfer-specific classification may be added in a future version.
+          </p>
+</div>
+<div class="p-space-md rounded-lg border border-outline-variant/60 bg-surface-container-low">
+<h4 class="font-headline-md text-headline-md text-primary text-base font-semibold mb-1">
+            Does 1Tap work offline?
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Core expense tracking, categorization, analytics and local history do not depend on a cloud account or server connection.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 10. FOOTER                                                                -->
+<!-- ========================================================================= -->
+<footer class="w-full border-t border-outline-variant dark:border-outline-variant bg-surface-container-lowest dark:bg-surface-dim" id="zerofrik">
+<div class="w-full py-space-xl px-gutter-lg max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-space-md">
+<!-- Brand & Copyright -->
+<div class="flex flex-col items-center md:items-start text-center md:text-left gap-1">
+<a class="font-headline-md text-headline-md text-primary dark:text-primary-fixed flex items-center gap-2 font-semibold tracking-tight hover:opacity-90 transition-opacity" href="index.html">
+<img alt="1Tap Logo" class="w-6 h-6 rounded-full object-cover" src="logo.svg">
+<span class="">1Tap by ZeroFrik</span>
+</a>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          © 2026 ZeroFrik. Private Android expense tracking built around on-device transaction processing.
         </p>
-        <div class="p-3.5 rounded-lg border border-primary/30 bg-primary-container/10 text-xs font-mono text-primary leading-normal">
-          To receive an invitation to the Android Closed Test, send us a quick note below or reach out via email.
-        </div>
-        <div class="pt-2 flex flex-col gap-2">
-          <button onclick="closeClosedTestModal(); openContactModal(event);" class="w-full inline-flex items-center justify-center h-10 px-4 text-xs font-mono uppercase tracking-wider font-bold bg-primary-container text-on-primary-container rounded-lg hover:brightness-110 transition-all cursor-pointer">
-            Request Testing Access
-          </button>
-          <button onclick="closeClosedTestModal()" class="w-full inline-flex items-center justify-center h-10 px-4 text-xs font-mono uppercase tracking-wider text-outline hover:text-on-surface transition-all cursor-pointer">
-            Close
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
+<!-- Footer Navigation Links -->
+<nav class="flex flex-wrap justify-center items-center gap-x-space-md gap-y-2 font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant dark:text-on-surface-variant">
+<a class="hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 focus:outline-none focus:ring-1 focus:ring-primary" href="/privacy-policy/">
+          Privacy Policy
+        </a>
+<span class="text-outline/40">•</span>
+<a class="hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 focus:outline-none focus:ring-1 focus:ring-primary" href="#features">
+          Features
+        </a>
+<span class="text-outline/40">•</span>
+<a class="hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 focus:outline-none focus:ring-1 focus:ring-primary" href="#how-it-works">
+          How It Works
+        </a>
+<span class="text-outline/40">•</span>
+<a class="hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 focus:outline-none focus:ring-1 focus:ring-primary" href="#pricing">
+          Pricing
+        </a>
+<span class="text-outline/40">•</span>
+<a class="hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 focus:outline-none focus:ring-1 focus:ring-primary" href="#faq">
+          FAQ
+        </a>
+<span class="text-outline/40">•</span>
+<a class="hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 focus:outline-none focus:ring-1 focus:ring-primary font-bold text-primary" href="https://zerofrik.com/" target="_blank" rel="noopener noreferrer">
+          ZeroFrik
+        </a>
+<span class="text-outline/40">•</span>
+<a class="hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 focus:outline-none focus:ring-1 focus:ring-primary" href="#" onclick="openContactModal(event)">
+          Contact
+        </a>
+</nav>
+</div>
+</footer>
 
+<!-- Contact Modal -->
+<div id="contact-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-3 sm:p-6" role="dialog" aria-modal="true" aria-labelledby="contact-title">
+<div class="absolute inset-0 bg-surface-container-lowest/85 backdrop-blur-md" onclick="closeContactModal()" aria-hidden="true"></div>
+<div class="relative w-full max-w-md rounded-2xl border border-outline-variant/60 bg-surface-container-low shadow-2xl">
+<div class="flex items-center justify-between border-b border-outline-variant/40 bg-surface-container-lowest px-4 py-4 sm:px-6">
+<div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">mail</span><h2 id="contact-title" class="font-headline-md text-xl text-on-surface">Contact 1Tap Team</h2></div>
+<button type="button" onclick="closeContactModal()" aria-label="Close contact dialog" class="inline-flex h-10 w-10 items-center justify-center rounded-full text-outline hover:bg-surface-container-high hover:text-on-surface"><span class="material-symbols-outlined">close</span></button>
+</div>
+<div class="space-y-4 p-4 sm:p-6">
+<p class="font-body-sm text-body-sm leading-relaxed text-on-surface-variant">Questions about 1Tap or closed-test access are handled by the ZeroFrik team.</p>
+<a href="https://zerofrik.com/" target="_blank" rel="noopener noreferrer" class="inline-flex h-11 w-full items-center justify-center gap-2 rounded-lg bg-primary-container px-4 font-label-md text-label-md font-bold uppercase tracking-wider text-on-primary-container hover:brightness-110"><span class="material-symbols-outlined text-[18px]">open_in_new</span>Visit ZeroFrik</a>
+</div>
+</div>
+</div>
 
-  <!-- ========================================================================= -->
-  <!-- LIGHTWEIGHT INTERACTIVITY SCRIPTS                                         -->
-  <!-- ========================================================================= -->
-  <script>
-    // -----------------------------------------------------------------------
-    // AWAITING_CONFIGURATION: Replace with actual Google Play Closed Test opt-in URL
-    // e.g., 'https://play.google.com/apps/testing/com.zerofrik.onetap'
-    // -----------------------------------------------------------------------
-    const CLOSED_TEST_URL = '';
+<!-- Closed Test Modal -->
+<div id="closed-test-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-3 sm:p-6" role="dialog" aria-modal="true" aria-labelledby="closed-test-title">
+<div class="absolute inset-0 bg-surface-container-lowest/85 backdrop-blur-md" onclick="closeClosedTestModal()" aria-hidden="true"></div>
+<div class="relative max-h-[calc(100dvh-1.5rem)] w-full max-w-md overflow-y-auto rounded-2xl border border-outline-variant/60 bg-surface-container-low shadow-2xl">
+<div class="flex items-center justify-between border-b border-outline-variant/40 bg-surface-container-lowest px-4 py-4 sm:px-6">
+<div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">science</span><h2 id="closed-test-title" class="font-headline-md text-xl text-on-surface">1Tap Closed Testing</h2></div>
+<button type="button" onclick="closeClosedTestModal()" aria-label="Close closed-test dialog" class="inline-flex h-10 w-10 items-center justify-center rounded-full text-outline hover:bg-surface-container-high hover:text-on-surface"><span class="material-symbols-outlined">close</span></button>
+</div>
+<div class="space-y-4 p-4 sm:p-6">
+<p class="font-body-sm text-body-sm leading-relaxed text-on-surface-variant">1Tap is currently undergoing closed testing on Google Play. Testing invitations and opt-in links are managed directly by ZeroFrik.</p>
+<div class="rounded-lg border border-primary/30 bg-primary-container/10 p-3.5 text-xs font-mono leading-relaxed text-primary">To request an invitation, contact the ZeroFrik team through the official website.</div>
+<a href="https://zerofrik.com/" target="_blank" rel="noopener noreferrer" class="inline-flex h-11 w-full items-center justify-center gap-2 rounded-lg bg-primary-container px-4 font-label-md text-label-md font-bold uppercase tracking-wider text-on-primary-container"><span class="material-symbols-outlined text-[18px]">open_in_new</span>Contact ZeroFrik</a>
+</div>
+</div>
+</div>
 
-    // Closed Test CTA Click Handler (Triggers GA4 event safely without PII)
-    function handleClosedTestClick(e) {
-      if (e) e.preventDefault();
+<script>
+  const CLOSED_TEST_URL = '';
+  const mobileMenuButton = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
 
-      // Trigger GA4 event safely (no PII)
-      if (typeof gtag === 'function') {
-        gtag('event', 'select_content', {
-          content_type: 'closed_test',
-          item_id: '1tap_android'
-        });
-      }
+  function setMobileMenu(open) {
+    if (!mobileMenuButton || !mobileMenu) return;
+    mobileMenu.classList.toggle('hidden', !open);
+    mobileMenuButton.setAttribute('aria-expanded', String(open));
+    mobileMenuButton.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+    const icon = mobileMenuButton.querySelector('.material-symbols-outlined');
+    if (icon) icon.textContent = open ? 'close' : 'menu';
+  }
 
-      if (CLOSED_TEST_URL && CLOSED_TEST_URL.trim() !== '') {
-        window.open(CLOSED_TEST_URL, '_blank', 'noopener,noreferrer');
-      } else {
-        // Safe navigation prevention: show helpful modal awaiting configuration
-        const modal = document.getElementById('closed-test-modal');
-        if (modal) {
-          modal.classList.remove('hidden');
-        }
-      }
+  mobileMenuButton?.addEventListener('click', () => setMobileMenu(mobileMenu.classList.contains('hidden')));
+  mobileMenu?.querySelectorAll('a, button').forEach(item => item.addEventListener('click', () => setMobileMenu(false)));
+  window.addEventListener('resize', () => { if (window.innerWidth >= 1024) setMobileMenu(false); });
+
+  function handleClosedTestClick(event) {
+    event?.preventDefault();
+    if (CLOSED_TEST_URL) {
+      window.open(CLOSED_TEST_URL, '_blank', 'noopener,noreferrer');
+      return;
     }
+    const modal = document.getElementById('closed-test-modal');
+    modal?.classList.remove('hidden');
+    modal?.classList.add('flex');
+    document.body.classList.add('overflow-hidden');
+  }
 
-    function closeClosedTestModal() {
-      const modal = document.getElementById('closed-test-modal');
-      if (modal) {
-        modal.classList.add('hidden');
-      }
-    }
+  function closeClosedTestModal() {
+    const modal = document.getElementById('closed-test-modal');
+    modal?.classList.add('hidden');
+    modal?.classList.remove('flex');
+    document.body.classList.remove('overflow-hidden');
+  }
 
-    // 1. Mobile Menu Toggle
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (mobileMenuBtn && mobileMenu) {
-      mobileMenuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-      });
-    }
+  function openContactModal(event) {
+    event?.preventDefault();
+    const modal = document.getElementById('contact-modal');
+    modal?.classList.remove('hidden');
+    modal?.classList.add('flex');
+    document.body.classList.add('overflow-hidden');
+  }
 
-    // 2. Interactive Category Switcher Demo
-    const categoryChips = document.querySelectorAll('#category-chips .category-chip');
-    const demoCatName = document.getElementById('demo-cat-name');
-    const demoCatIcon = document.getElementById('demo-cat-icon');
+  function closeContactModal() {
+    const modal = document.getElementById('contact-modal');
+    modal?.classList.add('hidden');
+    modal?.classList.remove('flex');
+    document.body.classList.remove('overflow-hidden');
+  }
 
-    categoryChips.forEach(chip => {
-      chip.addEventListener('click', () => {
-        categoryChips.forEach(c => {
-          c.classList.remove('active');
-          c.classList.add('text-on-surface-variant');
-        });
-        chip.classList.add('active');
-        chip.classList.remove('text-on-surface-variant');
+  document.addEventListener('keydown', event => {
+    if (event.key !== 'Escape') return;
+    setMobileMenu(false);
+    closeContactModal();
+    closeClosedTestModal();
+  });
+</script>
 
-        const cat = chip.getAttribute('data-cat');
-        const icon = chip.getAttribute('data-icon');
-
-        if (demoCatName) demoCatName.textContent = cat;
-        if (demoCatIcon) demoCatIcon.textContent = icon;
-      });
-    });
-
-    // 3. Accessible FAQ Accordion
-    const faqBtns = document.querySelectorAll('#faq-accordion .faq-btn');
-    faqBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const content = btn.nextElementSibling;
-        const icon = btn.querySelector('.material-symbols-outlined');
-        const isHidden = content.classList.contains('hidden');
-
-        // Close all other items
-        document.querySelectorAll('#faq-accordion .faq-content').forEach(c => c.classList.add('hidden'));
-        document.querySelectorAll('#faq-accordion .faq-btn .material-symbols-outlined').forEach(i => i.style.transform = 'rotate(0deg)');
-
-        // Toggle current item
-        if (isHidden) {
-          content.classList.remove('hidden');
-          if (icon) icon.style.transform = 'rotate(180deg)';
-        }
-      });
-    });
-
-    // 4. Contact Modal Handler & Google Sheets Submission
-    function openContactModal(e) {
-      if (e) e.preventDefault();
-      const modal = document.getElementById('contact-modal');
-      if (modal) {
-        modal.classList.remove('hidden');
-        document.getElementById('contact-email')?.focus();
-      }
-    }
-    
-    function closeContactModal() {
-      const modal = document.getElementById('contact-modal');
-      if (modal) {
-        modal.classList.add('hidden');
-        document.getElementById('contact-form')?.reset();
-        const statusEl = document.getElementById('contact-status');
-        if (statusEl) {
-          statusEl.classList.add('hidden');
-          statusEl.textContent = '';
-          statusEl.className = 'hidden text-xs text-center font-mono mt-2 py-2 rounded-lg';
-        }
-      }
-    }
-
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-      contactForm.addEventListener('submit', async function(e) {
-        e.preventDefault();
-        
-        const submitBtn = document.getElementById('contact-submit');
-        const statusEl = document.getElementById('contact-status');
-        const email = document.getElementById('contact-email').value;
-        const message = document.getElementById('contact-body').value;
-        
-        // Setup UI for submission
-        if (submitBtn) {
-          submitBtn.disabled = true;
-          submitBtn.textContent = 'Sending...';
-          submitBtn.classList.add('opacity-70');
-        }
-        if (statusEl) statusEl.classList.add('hidden');
-        
-        // Google Sheet Web App Webhook URL
-        const WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbw3V4ZcGXQQSsza3Q8Npd8CwKawwTWMYlqIKhiO3lnpSQgm-uAiA6BxZFNdF1htJPep/exec';
-        
-        try {
-          const formData = new FormData();
-          formData.append('email', email);
-          formData.append('message', message);
-          formData.append('source', '1tap');
-          formData.append('form', 'contact_1tap');
-
-          await fetch(WEBHOOK_URL, {
-            method: 'POST',
-            body: formData,
-            mode: 'no-cors'
-          });
-
-          // The no-cors request returns an opaque response.
-          // The analytics event represents a completed frontend submission attempt,
-          // not a backend-confirmed successful lead.
-          if (typeof gtag === 'function') {
-            gtag('event', 'generate_lead', {
-              lead_type: '1tap_contact'
-            });
-          }
-          
-          if (statusEl) {
-            statusEl.textContent = 'Message sent successfully!';
-            statusEl.className = 'text-xs text-center font-mono mt-3 py-2 rounded-lg bg-emerald-500/15 text-emerald-400 border border-emerald-500/30';
-            statusEl.classList.remove('hidden');
-          }
-          contactForm.reset();
-          
-          setTimeout(() => {
-            closeContactModal();
-          }, 2000);
-          
-        } catch (error) {
-          console.error('Error submitting form:', error);
-          if (statusEl) {
-            statusEl.textContent = 'Error sending message. Please try again.';
-            statusEl.className = 'text-xs text-center font-mono mt-3 py-2 rounded-lg bg-rose-500/15 text-rose-400 border border-rose-500/30';
-            statusEl.classList.remove('hidden');
-          }
-        } finally {
-          if (submitBtn) {
-            submitBtn.disabled = false;
-            submitBtn.textContent = 'Send Message';
-            submitBtn.classList.remove('opacity-70');
-          }
-        }
-      });
-    }
-  </script>
-
-</body>
-
-</html>
+</body></html>
